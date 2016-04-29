@@ -9,7 +9,7 @@
 title: Fu_sion
 email: Fu_sion@live.com
 description: > # this means to ignore newlines until "baseurl:"
-  一个正在积极学习 OC 、Swift中的码农！
+  一个正在积极学习 OC 、Swift中的码农！</br>
   很高兴能在这里和你一起交流！
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://fdson.com" # the base hostname & protocol for your site
