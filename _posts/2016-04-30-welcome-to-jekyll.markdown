@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Happy Codeing!"
+title:  "Happy Coding!"
 date:   2016-04-30 00:26:38 +0800
 categories: jekyll update
 ---
