@@ -18,6 +18,3 @@ github_username:  SionFu
 
 # Build settings
 markdown: kramdown
-
-# 修改标题链接 为短链接
-permalink: '/:title.html'

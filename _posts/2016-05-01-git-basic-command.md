@@ -164,7 +164,7 @@ git commit
 $ git config --global user.name Fu_sionWorkMac
 $ git config --global user.email test@fdson.com
 ```
- 查看 `git config `配置 ` $ git config -l`
+ 查看 `git config ` 配置  `$ git config -L `
 
 接下来写入缓存 , 并提交对 hello.php 的所有改动 
 
