@@ -9,12 +9,11 @@
   <link rel="Shortcut icon" href="https://raw.githubusercontent.com/SionFu/SionFu.github.io/master/_site/Images/favicon.ico" />
   <link rel="Bookmark" href="https://raw.githubusercontent.com/SionFu/SionFu.github.io/master/_site/Images/favicon.ico" />
 
-  <title>Fu_sion</title>
-  <meta name="description" content="一个正在积极学习 OC 、Swift中的码农！</br> 很高兴能在这里和你一起交流！
-">
+  <title>简单的分屏 Demo</title>
+  <meta name="description" content="  利用 autoLayout 和 Size Classes 先进行布局  上面或者左边的 view 先进行 with 和 height 的限定  把约束进行拖线 利用 pan point.x/y 的手势进行约束constant的赋值  代码">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://fdson.com/">
+  <link rel="canonical" href="http://fdson.com/split-screen-demo.html">
   <link rel="alternate" type="application/rss+xml" title="Fu_sion" href="http://fdson.com/feed.xml">
 </head>
 
@@ -64,57 +63,77 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <h1 class="page-heading">Do IT.</h1>
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">简单的分屏 Demo</h1>
+    <p class="post-meta"><time datetime="2016-05-07T23:58:29+08:00" itemprop="datePublished">May 7, 2016</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Fu_sion</span></span></p>
+  </header>
 
-  <ul class="post-list">
+  <div class="post-content" itemprop="articleBody">
+    <ol>
+  <li>利用 autoLayout 和 Size Classes 先进行布局</li>
+  <li>上面或者左边的 view 先进行 with 和 height 的限定</li>
+  <li>把约束进行拖线 利用 pan point.x/y 的手势进行约束constant的赋值</li>
+  <li>代码</li>
+</ol>
+
+<pre><code class="language-obj-c">//
+//  ViewController.m
+//  test_分屏
+//
+//  Created by Fu_sion on 16/4/16.
+//  Copyright © 2016年 Fu_sion. All rights reserved.
+//
+
+#import "ViewController.h"
+
+@interface ViewController ()
+@property (weak, nonatomic) IBOutlet UITextView *textViewA;
+@property (weak, nonatomic) IBOutlet UITextView *textViewB;
+@property (weak, nonatomic) IBOutlet UIView *cutScreenView;
+@property (weak, nonatomic) IBOutlet UIView *cutScreenViewB;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *viewAAndBHeigth;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *viewAHeigh;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *viewAwith;
+@end
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+    [self cutScreenA];
+    [self cutScreenB];
+}
+-(void)cutScreenB{
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(cupScreen:)];
+     [self.cutScreenViewB addGestureRecognizer:pan];
+}
+- (void)cutScreenA{
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(cupScreen:)];
+    [self.cutScreenView addGestureRecognizer:pan];
+   
+}
+-(void)cupScreen:(UIPanGestureRecognizer*)sender{
+    CGPoint point = [sender locationInView:self.view];
+    CGFloat screenHeigth = self.view.frame.size.height;
+    CGFloat mu = self.viewAAndBHeigth.multiplier;
+    CGFloat mutiplier = (screenHeigth - point.y) / point.y;
+    NSLog(@"%f ,%f ",mutiplier,mu);
+
+    self.viewAHeigh.constant = point.y;
+    self.viewAwith.constant = point.x;
     
-      <li>
-        <span class="post-meta">May 7, 2016</span>
+}
+</code></pre>
+<p>##注意:约束的定位 和两个 cutView 的pan 手势需要分开添加两个手势才会生效;</p>
 
-        <h2>
-          <a class="post-link" href="/split-screen-demo.html">简单的分屏 Demo</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">May 1, 2016</span>
 
-        <h2>
-          <a class="post-link" href="/git-basic-command.html">学习基础 Git  命令</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Apr 30, 2016</span>
+  </div>
 
-        <h2>
-          <a class="post-link" href="/all-of-2015.html">今年居然没有总结</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Apr 30, 2016</span>
-
-        <h2>
-          <a class="post-link" href="/first-blog-in-git.html">这是我第一篇用静态博客写的文章!</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Apr 30, 2016</span>
-
-        <h2>
-          <a class="post-link" href="/welcome-to-jekyll.html">Happy Coding!</a>
-        </h2>
-      </li>
-    
-  </ul>
-
-  <p class="rss-subscribe">订阅 <a href="/feed.xml">RSS</a></p>
-
-</div>
+</article>
 
       </div>
     </div>
