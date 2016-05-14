@@ -77,34 +77,31 @@
 
 <p>git init</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$ mkdir Fu_sion
+<pre><code>$ mkdir Fu_sion
 $ cd Fu_sion/
 //初始化git仓库
 $ git init
 </code></pre>
-</div>
 
-<p>生成仓库后可以用命令<code class="highlighter-rouge">$ ls</code>来查看是否创建成功 <code class="highlighter-rouge">-a</code> 显示 隐藏的文件\夹</p>
+<p>生成仓库后可以用命令<code>$ ls</code>来查看是否创建成功 <code>-a</code> 显示 隐藏的文件\夹</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$ ls -a
+<pre><code>$ ls -a
 </code></pre>
-</div>
 
 <p>git clone
 用clone下载一个远程Git仓库到本地，创建分支或者进行修改</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$ git clone https://github.com/SionFu/SionFu.github.io.git
+<pre><code>$ git clone https://github.com/SionFu/SionFu.github.io.git
 </code></pre>
-</div>
-<p>下载完后就会在本地创建一个与仓库名一样的文件夹<code class="highlighter-rouge">SionFu.github.io</code>
-接下来进入到这个文件夹中<code class="highlighter-rouge">$ cd SionFu.github.io</code>
-默认情况下是创建于仓库名一样的名字，如果需要重命名，可以在后面添加上你想要的文件夹名字<code class="highlighter-rouge">git clone https://github.com/SionFu/SionFu.github.io.git Test</code>
-顺便放上删除文件夹的命令 <code class="highlighter-rouge">$ rm -rf Test</code></p>
+<p>下载完后就会在本地创建一个与仓库名一样的文件夹<code>SionFu.github.io</code>
+接下来进入到这个文件夹中<code>$ cd SionFu.github.io</code>
+默认情况下是创建于仓库名一样的名字，如果需要重命名，可以在后面添加上你想要的文件夹名字<code>git clone https://github.com/SionFu/SionFu.github.io.git Test</code>
+顺便放上删除文件夹的命令 <code>$ rm -rf Test</code></p>
 
 <p>git add
 用add命令来将修改或者添加的文件 添加到缓存中</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$ touch README
+<pre><code>$ touch README
 $ touch hello.php
 $ ls 
 README		hello.php
@@ -113,27 +110,24 @@ $ git status -s
 ?? hello.php
 $ 
 </code></pre>
-</div>
 
 <p>git status 
 该命令用来查看项目的当前状态
 将创建的文件添加到缓存，下面两行命令的效果一样 前面的是将整个文件夹进行 添加</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$ git add .
+<pre><code>$ git add .
 $ git add README hello.php
 </code></pre>
-</div>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$ git status -s
+<pre><code>$ git status -s
 A  README
 A  hello.php
 </code></pre>
-</div>
 
 <p>添加文件夹为A
 下面修改文件内容</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$ vim README
+<pre><code>$ vim README
 &lt;p&gt;在README文件中添加一下内容: &lt;b&gt;#Git 测试&lt;/b&gt;, 然后保存退出。&lt;/p&gt;
 &lt;p&gt;再执行下 git status&lt;/p&gt;
 $ git status -s
@@ -141,22 +135,20 @@ AM README
 A  hello.php
 
 </code></pre>
-</div>
-<p><code class="highlighter-rouge">AM</code>意思就是在这个文件在我们将他添加到缓存之后又有改动, 改动后用 <code class="highlighter-rouge">$ git add</code> 命令来将其添加到缓存中;</p>
+<p><code>AM</code>意思就是在这个文件在我们将他添加到缓存之后又有改动, 改动后用 <code>$ git add</code> 命令来将其添加到缓存中;</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$ git add README
+<pre><code>$ git add README
 $ git status -s
 A  README
 A  hello.php
 </code></pre>
-</div>
 
-<p>提交到缓存用 <code class="highlighter-rouge">add</code> 命令 如果是提交到服务器仓库用 <code class="highlighter-rouge">$ git push</code> ;</p>
+<p>提交到缓存用 <code>add</code> 命令 如果是提交到服务器仓库用 <code>$ git push</code> ;</p>
 
 <p>git status
-该命令可以查看 本地当前的内容与上次提交的内容的差别 <code class="highlighter-rouge">-s</code> 可以简短的输出结果, 如果没有参数则输出</p>
+该命令可以查看 本地当前的内容与上次提交的内容的差别 <code>-s</code> 可以简短的输出结果, 如果没有参数则输出</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$ git status
+<pre><code>$ git status
 On branch master
 
 Initial commit
@@ -171,26 +163,24 @@ localhost:test tarena$ git status -s
 A  README
 A  hello.php
 </code></pre>
-</div>
 
 <p>git diff
-该命令用来查看 比执行 <code class="highlighter-rouge">git status</code> 更加详细的信息;
-<code class="highlighter-rouge">$ git diff </code>命令显示写入缓存与已修改但是没有写入缓存的改动区别, 主要的引用场景有:
-1. 还没有缓存的改动: <code class="highlighter-rouge">$ git diff</code>
-2. 已经缓存的改动(提交缓存中的与提交前的更改): <code class="highlighter-rouge">$ git diff --cached</code>
-3. 查看已经缓存的与缓存已经提交之间的改动：<code class="highlighter-rouge">$ git diff HEAD</code>
-4. 显示摘要而非整个diff：<code class="highlighter-rouge">$ git diff --stat </code></p>
+该命令用来查看 比执行 <code>git status</code> 更加详细的信息;
+<code>$ git diff </code>命令显示写入缓存与已修改但是没有写入缓存的改动区别, 主要的引用场景有:
+1. 还没有缓存的改动: <code>$ git diff</code>
+2. 已经缓存的改动(提交缓存中的与提交前的更改): <code>$ git diff --cached</code>
+3. 查看已经缓存的与缓存已经提交之间的改动：<code>$ git diff HEAD</code>
+4. 显示摘要而非整个diff：<code>$ git diff --stat </code></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$ git diff --stat
+<pre><code>$ git diff --stat
  README | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 </code></pre>
-</div>
-<p><code class="highlighter-rouge">$ git status </code>显示的是上次提交更新后的更改或者写入缓存的改动, 而 git diff 一行一行的显示这些具体改动具体是啥。</p>
+<p><code>$ git status </code>显示的是上次提交更新后的更改或者写入缓存的改动, 而 git diff 一行一行的显示这些具体改动具体是啥。</p>
 
-<p>下面是 <code class="highlighter-rouge">$ git diff --cached</code> 的执行效果</p>
+<p>下面是 <code>$ git diff --cached</code> 的执行效果</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$ git diff --cached
+<pre><code>$ git diff --cached
 diff --git a/README b/README
 new file mode 100644
 index 0000000..c0e39ad
@@ -209,23 +199,21 @@ index 0000000..973b754
 +echo 'Fu_sion: fdson.com'
 +?&gt;
 </code></pre>
-</div>
 
 <p>git commit 
-使用 <code class="highlighter-rouge">$ git add</code> 命令是将 更改写到缓存区 ，执行 <code class="highlighter-rouge">$ git commit</code> 是将缓存的内容添加到仓库中。</p>
+使用 <code>$ git add</code> 命令是将 更改写到缓存区 ，执行 <code>$ git commit</code> 是将缓存的内容添加到仓库中。</p>
 
-<p>这里设置的 <code class="highlighter-rouge">user.name</code> 可以是自己自定义，会显示到 GitHub 上的修改者上 
-这里的 <code class="highlighter-rouge">user.email</code> 参数是必须是自己GitHub上的用户邮箱</p>
+<p>这里设置的 <code>user.name</code> 可以是自己自定义，会显示到 GitHub 上的修改者上 
+这里的 <code>user.email</code> 参数是必须是自己GitHub上的用户邮箱</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$ git config --global user.name Fu_sionWorkMac
+<pre><code>$ git config --global user.name Fu_sionWorkMac
 $ git config --global user.email test@fdson.com
 </code></pre>
-</div>
-<p>查看 <code class="highlighter-rouge">git config </code> 配置  <code class="highlighter-rouge">$ git config -L </code></p>
+<p>查看 <code>git config </code> 配置  <code>$ git config -L </code></p>
 
 <p>接下来写入缓存 , 并提交对 hello.php 的所有改动</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$ git add .
+<pre><code>$ git add .
 $ git status -s
 A  README
 A  hello.php
@@ -235,28 +223,26 @@ $ git commit -m 'first update'
  create mode 100644 README
  create mode 100644 hello.php
 </code></pre>
-</div>
 
 <p>上传快照后执行</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$ git status
+<pre><code>$ git status
 On branch master
 nothing to commit, working directory clean
 </code></pre>
-</div>
 
-<p>以上说明我们在最后一次提交之后没有做任何的改动 , <code class="highlighter-rouge">nothing to commit, working directory clean</code> 干净的工作目录
+<p>以上说明我们在最后一次提交之后没有做任何的改动 , <code>nothing to commit, working directory clean</code> 干净的工作目录
 在进行项目前可以先执行这条语句,保证之后的更改可以恢复
-每次进行 <code class="highlighter-rouge">$ git commit </code>之前只有缓存中有改变时才会执行命令行
-可以用 <code class="highlighter-rouge">$ git diff --cached</code> 来查看缓存区与仓库代码之间的区别
-而 <code class="highlighter-rouge">$ git status </code> 是用来查看本地文件与缓存中的代码之间的区别
-<code class="highlighter-rouge">$ git diff --HEAD</code> 查看缓存中与提交到仓库的代码之间的区别</p>
+每次进行 <code>$ git commit </code>之前只有缓存中有改变时才会执行命令行
+可以用 <code>$ git diff --cached</code> 来查看缓存区与仓库代码之间的区别
+而 <code>$ git status </code> 是用来查看本地文件与缓存中的代码之间的区别
+<code>$ git diff --HEAD</code> 查看缓存中与提交到仓库的代码之间的区别</p>
 
 <p>更改-&gt; 本地 ==&gt; 更改-&gt;缓存  ==&gt; 更改-&gt;提交</p>
 
 <p>git rest HEAD</p>
 
-<p><code class="highlighter-rouge">$ git reset HEAD</code> 命令用于取消缓存的内容
+<p><code>$ git reset HEAD</code> 命令用于取消缓存的内容
 小测试:</p>
 
 <ol>
@@ -267,7 +253,7 @@ nothing to commit, working directory clean
   <li>比较本地文件与缓存区中的区别</li>
 </ol>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>
+<pre><code>
 1.
 $ vi hello.php
 $ vi README
@@ -293,42 +279,38 @@ $ git status -s
  M hello.php
 
 </code></pre>
-</div>
 
 <p>git rm 
 同时删除缓存区域本地的文件</p>
 
-<p>删除 <code class="highlighter-rouge">test.php</code> 文件</p>
+<p>删除 <code>test.php</code> 文件</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$ ls
+<pre><code>$ ls
 README		hello.php	test.php
 $ git rm test.php
 rm 'test.php'
 $ ls
 README		hello.php
 </code></pre>
-</div>
 
-<p>不从工作区中删除文件只删除缓存区中的文件使用 <code class="highlighter-rouge">--cached</code> 命令</p>
+<p>不从工作区中删除文件只删除缓存区中的文件使用 <code>--cached</code> 命令</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$ git rm --cached README
+<pre><code>$ git rm --cached README
 rm 'README'
 $ ls
 README		hello.php
 </code></pre>
-</div>
 
 <p>git rm 
 重命名并添加到缓存中, 需要重命名的文件必须存在于缓存中, 否则不可重命名</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$ git mv readme.txt test.tt
+<pre><code>$ git mv readme.txt test.tt
 fatal: not under version control, source=readme.txt, destination=test.tt
 git add .
 $ git mv readme.txt test.tt
 $ ls
 hello.php	test.tt
 </code></pre>
-</div>
 
 <table>
   <thead>
@@ -340,27 +322,27 @@ hello.php	test.tt
   <tbody>
     <tr>
       <td>查看提交日志</td>
-      <td><code class="highlighter-rouge">$ git log</code></td>
+      <td><code>$ git log</code></td>
     </tr>
     <tr>
       <td>查看简洁版的历史记录</td>
-      <td><code class="highlighter-rouge">$ git log --oneline </code></td>
+      <td><code>$ git log --oneline </code></td>
     </tr>
     <tr>
       <td>查看分支</td>
-      <td><code class="highlighter-rouge">$ git log --oneline --graph</code></td>
+      <td><code>$ git log --oneline --graph</code></td>
     </tr>
     <tr>
       <td>倒序查看修改提交情况</td>
-      <td><code class="highlighter-rouge">$ git log --reverse --oneline</code></td>
+      <td><code>$ git log --reverse --oneline</code></td>
     </tr>
     <tr>
       <td>查看作者SionFu在项目中的修改提交情况</td>
-      <td><code class="highlighter-rouge">$ git log --author=SionFu --oneline </code></td>
+      <td><code>$ git log --author=SionFu --oneline </code></td>
     </tr>
     <tr>
       <td>查询相关日期下的提交情况</td>
-      <td><code class="highlighter-rouge">$ git log --oneline --before={3.weeks.ago} --after={2010-04-18} --no-merges</code></td>
+      <td><code>$ git log --oneline --before={3.weeks.ago} --after={2010-04-18} --no-merges</code></td>
     </tr>
   </tbody>
 </table>

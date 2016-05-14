@@ -21,3 +21,6 @@ markdown: kramdown
 
 # 修改标题链接 为短链接
 permalink: '/:title.html'
+
+# 添加代码高亮样式
+highlighter: pygments
