@@ -5,7 +5,7 @@ permalink: /contact/
 ---
 下面是我的联系方式，有任何问题，欢迎与我交流
 
-1. WeiBo：[@Fu_Sion](http://weibo.com/fudongsheng)
+1. WeiBo：[@Fu_sion](http://weibo.com/fudongsheng)
 2. E-mail：Fu_sion#live.com
 3. QQ：376741420
 4. 或者
