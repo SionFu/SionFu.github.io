@@ -23,4 +23,4 @@ markdown: kramdown
 permalink: '/:title.html'
 
 # 添加代码高亮样式
-highlighter: pygments
+highlighter: rouge
