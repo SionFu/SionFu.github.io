@@ -15,7 +15,8 @@ tag:  学习 OC
 3. 把约束进行拖线 利用 pan point.x/y 的手势进行约束constant的赋值
 4. 代码
 
-```obj-c
+{% highlight objc %}
+
 //
 //  ViewController.m
 //  test_分屏
@@ -60,12 +61,12 @@ tag:  学习 OC
     CGFloat mu = self.viewAAndBHeigth.multiplier;
     CGFloat mutiplier = (screenHeigth - point.y) / point.y;
     NSLog(@"%f ,%f ",mutiplier,mu);
-
+    
     self.viewAHeigh.constant = point.y;
     self.viewAwith.constant = point.x;
-    
+  
 }
-```
+{% endhighlight %}
 ##注意:约束的定位 和两个 cutView 的pan 手势需要分开添加两个手势才会生效;
 
 
