@@ -6,9 +6,147 @@
 </description>
     <link>http://fdson.com/</link>
     <atom:link href="http://fdson.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 22 May 2016 20:32:04 +0800</pubDate>
-    <lastBuildDate>Sun, 22 May 2016 20:32:04 +0800</lastBuildDate>
+    <pubDate>Mon, 23 May 2016 01:03:31 +0800</pubDate>
+    <lastBuildDate>Mon, 23 May 2016 01:03:31 +0800</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
+    
+      <item>
+        <title>在 github 上安装个人博客</title>
+        <description>&lt;p&gt;##首先需要注册一个 GitHub 账号
+- 在注册账号上有点需要注意的就是用户名, 用户就是以后博客的地址就像SionFu.github.io 这里 SionFu 就是我的 GitHub 用户名, 不过没有注册到你想要的用户名也没事, 还有一个办法就是绑定个人域名, 在后面我会说说怎么绑定自己的域名。
+- 在电脑上安装环境 &lt;a href=&quot;http://jekyll.bootcss.com&quot;&gt;Jekyll&lt;/a&gt;这里是一个中文版的安装教程在 Mac 下一下几行命令就能完成安装&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ gem install jekyll
+~ $ jekyll new my-awesome-site
+~ $ cd my-awesome-site
+~/my-awesome-site $ jekyll serve
+# =&amp;gt; Now browse to http://localhost:4000
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;安装过程中出现问题可以 Google 百度, 我主要想说的是些我碰到的需要注意的地方,当然你想继续研究对 scc , js 感兴趣,也可以深读这个&lt;a href=&quot;http://jekyll.bootcss.com&quot;&gt;Jekyll&lt;/a&gt;网站上面虽然有些翻译的一般, 但是还是很详细的。&lt;/li&gt;
+  &lt;li&gt;以上两个准备工作完成后，就可以打开 &lt;a href=&quot;http://github.com&quot;&gt;Github&lt;/a&gt; 创建工程了。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/_site/Images/GithubBlog.png&quot; alt=&quot;GithubBlog&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;这里在棕色框内必须填写**用户名**.Github.io 才能创建博客项目,且一个账号就只能创建一个这样的项目。 - 如果这里项目名写错了, 也可以在后面再修改
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/_site/Images/changename.png&quot; alt=&quot;changename&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;点这里可以创建一个 github 自带的博客主页, 之后可以删除&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/_site/Images/LunchPage.png&quot; alt=&quot;LunchPage&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;点击这个按钮之后你就可以从&lt;code class=&quot;highlighter-rouge&quot;&gt;你的用户名. github.io &lt;/code&gt;访问你的博客了, 到这里为止和 jekyll 都没什么关系&lt;/li&gt;
+  &lt;li&gt;接下来还是和 jekyll 没什么关系, 打开&lt;a href=&quot;https://desktop.github.com&quot;&gt;GitHub Desktop&lt;/a&gt; 下载这个很好用的 git 版本控制软件, 登陆你的github 账号就能看到刚刚创建的项目&lt;/li&gt;
+  &lt;li&gt;将这个项目Clone 到本地 然后 Jekyll 就派上用场了&lt;/li&gt;
+  &lt;li&gt;用终端进入到刚刚 clone 下来的项目的文件夹上次层,用命令&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new 你的项目名&lt;/code&gt; 例如我的&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new SionFu.giuhub.io&lt;/code&gt; 这样就创建好了你的个人静态博客, 接下来是配置打开项目里的&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;文件&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# &#39;jekyll serve&#39;. If you change this file, please restart the server process.
+
+# Site settings
+title: 你的博客名字
+email: 你的邮箱
+description: &amp;gt; # this means to ignore newlines until &quot;baseurl:&quot;
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: &quot;&quot; # the subpath of your site, e.g. /blog
+url: &quot;http://yourdomain.com&quot; # the base hostname &amp;amp; protocol for your site
+twitter_username: 你的推特用户名
+github_username:  你的 github 用户名
+
+# Build settings
+markdown: kramdown
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ok 一切就绪,这里需&lt;strong&gt;要注意&lt;/strong&gt;的一个地方是, 在配置文件的前和配置名之前需要有个空格!比如&lt;code class=&quot;highlighter-rouge&quot;&gt;title:[一个空格]Fu_sion&lt;/code&gt;不然就 bulid 不成功&lt;/li&gt;
+  &lt;li&gt;接下来在终端运行 &lt;code class=&quot;highlighter-rouge&quot;&gt;$ jekyll build&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Configuration file: /Users/Fusion/test/_config.yml
+            Source: /Users/Fusion/test
+       Destination: /Users/Fusion/test/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+                    done in 0.348 seconds.
+ Auto-regeneration: disabled. Use --watch to enable.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;看到这样的提示基本成功了 只差最后一步&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;然后是 &lt;code class=&quot;highlighter-rouge&quot;&gt;$ jekyll server&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;      Generating... 
+                    done in 0.25 seconds.
+ Auto-regeneration: enabled for &#39;/Users/Fusion/test&#39;
+Configuration file: /Users/Fusion/test/_config.yml
+    Server address: http://127.0.0.1:4000/
+  Server running... press ctrl-c to stop.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;看到这个信息, 已经离成功很进了
+点击这个&lt;a href=&quot;http://127.0.0.1:4000/&quot;&gt;LocalHost&lt;/a&gt;就能看到你的博客的样子了
+&lt;img src=&quot;/_site/Images/JekyllBlog.png&quot; alt=&quot;JekyllBlog&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;我想你已经看到类似的画面了&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/_site/Images/commontogithub.png&quot; alt=&quot;commontogithub&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;输入修改内容 点击 commit to master&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;点击右上角的Sync Done! 可以访问你的域名了如&lt;code class=&quot;highlighter-rouge&quot;&gt;SionFu.github.io&lt;/code&gt;了!
+&lt;img src=&quot;/_site/Images/Sync.png&quot; alt=&quot;Syn&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;接下来就是关联自己的域名(如果你有的话), 在这个工程下面新建一个文件名为&lt;code class=&quot;highlighter-rouge&quot;&gt;CNAME&lt;/code&gt; 没有后缀&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/_site/Images/CNAME.png&quot; alt=&quot;CNAME&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;里面填写内容为你的域名 ok 真的结束了，然后在你的域名 DNS 服务器中添加 cname 指向你的博客域名 &lt;img src=&quot;/_site/Images/dns%20edit.png&quot; alt=&quot;dns edit&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;例如&lt;code class=&quot;highlighter-rouge&quot;&gt;fdson.com cname -&amp;gt; SionFu.github.io&lt;/code&gt; 接下来就可以用你的域名访问你的博客了&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;最后向你推介 DNS 域名解析商 完全是免费的&lt;a href=&quot;https://www.dnspod.cn&quot;&gt;DNSPOD&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;还有域名注册商 &lt;a href=&quot;http://gegehost.com&quot;&gt;GeGehost&lt;/a&gt;服务搜比较好, 反馈问题当天就能解决。&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Mon, 23 May 2016 01:00:22 +0800</pubDate>
+        <link>http://fdson.com/jekyll-webpage.html</link>
+        <guid isPermaLink="true">http://fdson.com/jekyll-webpage.html</guid>
+        
+        <category>学习 github Jekyll</category>
+        
+        
+        <category>fdson</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>Swift 基本数据类型</title>
