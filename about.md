@@ -13,4 +13,19 @@ permalink: /about/
 4. 要将主要的精力用在内容的创作上 就像 MD
 5. Git 学习[RUNOOB.COM](http://www.runoob.com/git/git-tutorial.html)
 6. Python 学习[廖雪峰的官方网站](http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000)
-
+<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="/about" data-title="About" data-url="fdson.com/about"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"skullft"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
