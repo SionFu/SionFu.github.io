@@ -13,7 +13,7 @@ permalink: /about/
 4. 要将主要的精力用在内容的创作上 就像 MD
 5. Git 学习[RUNOOB.COM](http://www.runoob.com/git/git-tutorial.html)
 6. Python 学习[廖雪峰的官方网站](http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000)
-
+7. 在我还能跑步之前不能有小肚子 每周 2-3 次五公里
 
 <div id="disqus_thread"></div>
 <script>
@@ -37,3 +37,4 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
