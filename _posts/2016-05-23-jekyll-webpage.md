@@ -23,7 +23,7 @@ tag:  学习 github Jekyll
 - 以上两个准备工作完成后，就可以打开 [Github](http://github.com) 创建工程了。
 
 
- ![GithubBlog](/_site/Images/GithubBlog.png)
+ ![GithubBlog](https://raw.githubusercontent.com/SionFu/SionFu.github.io/master/_site/Images/GithubBlog.png)
 
 
 
@@ -31,7 +31,7 @@ tag:  学习 github Jekyll
 	这里在棕色框内必须填写**用户名**.Github.io 才能创建博客项目,且一个账号就只能创建一个这样的项目。
 - 如果这里项目名写错了, 也可以在后面再修改
 
-![changename](/_site/Images/changename.png)
+![changename](https://raw.githubusercontent.com/SionFu/SionFu.github.io/master/_site/Images/changename.png)
 
 
 - 点这里可以创建一个 github 自带的博客主页, 之后可以删除
