@@ -37,7 +37,7 @@ tag:  学习 github Jekyll
 - 点这里可以创建一个 github 自带的博客主页, 之后可以删除
 
  
-![LunchPage](/_site/Images/LunchPage.png)
+![LunchPage](https://raw.githubusercontent.com/SionFu/SionFu.github.io/master/_site/Images/LunchPage.png)
 
 - 点击这个按钮之后你就可以从`你的用户名. github.io `访问你的博客了, 到这里为止和 jekyll 都没什么关系
 - 接下来还是和 jekyll 没什么关系, 打开[GitHub Desktop](https://desktop.github.com) 下载这个很好用的 git 版本控制软件, 登陆你的github 账号就能看到刚刚创建的项目
@@ -96,27 +96,29 @@ Configuration file: /Users/Fusion/test/_config.yml
 ```
 看到这个信息, 已经离成功很进了
 点击这个[LocalHost](http://127.0.0.1:4000/)就能看到你的博客的样子了
-![JekyllBlog](/_site/Images/JekyllBlog.png)
+![JekyllBlog](https://raw.githubusercontent.com/SionFu/SionFu.github.io/master/_site/Images/JekyllBlog.png)
 
 我想你已经看到类似的画面了
 
 
-![commontogithub](/_site/Images/commontogithub.png)
+![commontogithub](https://raw.githubusercontent.com/SionFu/SionFu.github.io/master/_site/Images/commontogithub.png)
 
 输入修改内容 点击 commit to master 
 
 - 点击右上角的Sync Done! 可以访问你的域名了如`SionFu.github.io`了!
-![Syn](/_site/Images/Sync.png)
+![Syn](https://raw.githubusercontent.com/SionFu/SionFu.github.io/master/_site/Images/Sync.png)
 
 
 - 接下来就是关联自己的域名(如果你有的话), 在这个工程下面新建一个文件名为`CNAME` 没有后缀
 
-![CNAME](/_site/Images/CNAME.png)
+![CNAME](https://raw.githubusercontent.com/SionFu/SionFu.github.io/master/_site/Images/CNAME.png)
 
-里面填写内容为你的域名 ok 真的结束了，然后在你的域名 DNS 服务器中添加 cname 指向你的博客域名 ![dns edit](/_site/Images/dns%20edit.png)
+里面填写内容为你的域名 ok 真的结束了，然后在你的域名 DNS 服务器中添加 cname 指向你的博客域名 ![dns edit](https://raw.githubusercontent.com/SionFu/SionFu.github.io/master/_site/Images/dns%20edit.png)
 
 例如`fdson.com cname -> SionFu.github.io` 接下来就可以用你的域名访问你的博客了
 
 - 最后向你推介 DNS 域名解析商 完全是免费的[DNSPOD](https://www.dnspod.cn)
 - 还有域名注册商 [GeGehost](http://gegehost.com)服务都比较好, 反馈问题当天就能解决。
+
+- 写了一个晚上..还有什么问题可以在[About](http://fdson.com/about)页面给我留言~
 
