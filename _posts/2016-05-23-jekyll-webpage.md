@@ -117,8 +117,8 @@ Configuration file: /Users/Fusion/test/_config.yml
 
 例如`fdson.com cname -> SionFu.github.io` 接下来就可以用你的域名访问你的博客了
 
-- 最后向你推介 DNS 域名解析商 完全是免费的[DNSPOD](https://www.dnspod.cn)
-- 还有域名注册商 [GeGehost](http://client.gegehost.com/aff.php?aff=449)服务都比较好, 反馈问题当天就能解决。
+- 最后向你推介 DNS 域名解析商 完全是免费的 [DNSPOD](https://www.dnspod.cn)
+- 还有域名注册商 [GeGehost](http://client.gegehost.com/aff.php?aff=449) 服务都比较好, 反馈问题当天就能解决。
 
-- 写了一个晚上..还有什么问题可以在[About](http://fdson.com/about)页面给我留言~
+- 写了一个晚上..还有什么问题可以在 [About](http://fdson.com/about) 页面给我留言~
 
