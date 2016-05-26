@@ -69,6 +69,6 @@ tag:  学习 OC
 {% endhighlight %}
 ##注意:约束的定位 和两个 cutView 的pan 手势需要分开添加两个手势才会生效;
 
-代码地址 [简单分屏Demo https://github.com/SionFu/-Demo](https://github.com/SionFu/-Demo)
+代码地址 [简单分屏Demo https://github.com/SionFu/SplitScreenDemo](https://github.com/SionFu/SplitScreenDemo)
 
 
