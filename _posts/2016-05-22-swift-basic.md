@@ -317,7 +317,6 @@ i++
 - 小练习 写一个循环 计算里面除了元音的字符
 
 ```swift
-
 let message = "a place where people can play"
 //写一个程序 统计了 除了 a e i o u 之外有多少个字符
 var n = 0
@@ -336,37 +335,30 @@ for ch in message.characters {
         count++
     }
 }
-
 ```
 
 - break终止循环可以用标记
 
 ```swift
-
 for var i = 0; i < 10 ; i++ {
     for var j = 0 ; j < 10 ; j++ {
         if j == 3 {
             //终止当前循环
             i = 11
             break
-            
         }
         print("\(i) \(j)")
     }
 }
-
 outerloop: for var i = 0; i < 10 ; i++ {
     for var j = 0 ; j < 10 ; j++ {
         if j == 3 {
             //终止当前循环 break 后面可以跟标签
-          break outerloop
-            
+          break outerloop  
         }
         print("\(i) \(j)")
     }
 }
-
-
 ```
 
 
