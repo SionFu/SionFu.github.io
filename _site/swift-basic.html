@@ -83,7 +83,7 @@ Swift 是强类型语言</p>
   <li>定义常量 和 变量</li>
 </ul>
 
-<div class="language-swift highlighter-rouge"><pre class="highlight"><code><span class="k">var</span> <span class="nv">str</span> <span class="o">=</span> <span class="s">"HelloWord"</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">var</span> <span class="nv">str</span> <span class="o">=</span> <span class="s">"HelloWord"</span>
 <span class="k">let</span> <span class="nv">str</span> <span class="o">=</span> <span class="s">"HelloWord"</span>
 </code></pre>
 </div>
@@ -91,7 +91,7 @@ Swift 是强类型语言</p>
   <li>类型标注</li>
 </ul>
 
-<div class="language-swift highlighter-rouge"><pre class="highlight"><code><span class="k">var</span> <span class="nv">str</span> <span class="p">:</span> <span class="kt">String</span> <span class="c1">//声明变量 str 为 String 类型 只能赋值字符串</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">var</span> <span class="nv">str</span> <span class="p">:</span> <span class="kt">String</span> <span class="c1">//声明变量 str 为 String 类型 只能赋值字符串</span>
 </code></pre>
 </div>
 
@@ -99,7 +99,7 @@ Swift 是强类型语言</p>
   <li>强类型转换</li>
 </ul>
 
-<div class="language-swift highlighter-rouge"><pre class="highlight"><code><span class="k">var</span> <span class="nv">int</span> <span class="o">=</span> <span class="mi">12</span><span class="p">;</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">var</span> <span class="nv">int</span> <span class="o">=</span> <span class="mi">12</span><span class="p">;</span>
 <span class="k">var</span> <span class="nv">double</span> <span class="o">=</span> <span class="mf">3.14</span>
 <span class="c1">//int = double //不支持隐式类型转换</span>
 <span class="n">int</span> <span class="o">=</span> <span class="kt">Int</span><span class="p">(</span><span class="n">double</span><span class="p">)</span>
@@ -109,7 +109,7 @@ Swift 是强类型语言</p>
   <li>字符串的拼接</li>
 </ul>
 
-<div class="language-swift highlighter-rouge"><pre class="highlight"><code><span class="k">var</span> <span class="nv">label</span> <span class="o">=</span> <span class="s">"This is"</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">var</span> <span class="nv">label</span> <span class="o">=</span> <span class="s">"This is"</span>
 <span class="k">var</span> <span class="nv">label1</span> <span class="o">=</span> <span class="s">"Label"</span>
 <span class="k">var</span> <span class="nv">test</span> <span class="o">=</span> <span class="n">label</span> <span class="o">+</span> <span class="n">label1</span>
 <span class="k">var</span> <span class="nv">with</span> <span class="o">=</span> <span class="mi">60</span> 
@@ -127,7 +127,7 @@ Swift 是强类型语言</p>
   </li>
 </ul>
 
-<div class="language-swift highlighter-rouge"><pre class="highlight"><code><span class="k">var</span> <span class="nv">i</span> <span class="p">:</span> <span class="kt">Int</span> 
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">var</span> <span class="nv">i</span> <span class="p">:</span> <span class="kt">Int</span> 
 <span class="kd">var</span><span class="o">.</span><span class="n">max</span>
 <span class="kd">var</span><span class="o">.</span><span class="n">min</span>
 <span class="c1">//Int 默认为 Int64</span>
@@ -138,7 +138,7 @@ Swift 是强类型语言</p>
   <li>浮点</li>
 </ul>
 
-<div class="language-swift highlighter-rouge"><pre class="highlight"><code><span class="k">var</span> <span class="nv">f1</span> <span class="p">:</span> <span class="kt">Float</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">var</span> <span class="nv">f1</span> <span class="p">:</span> <span class="kt">Float</span>
 <span class="k">var</span> <span class="nv">f2</span> <span class="p">:</span> <span class="kt">Float80</span>
 <span class="k">var</span> <span class="nv">f3</span> <span class="p">:</span> <span class="n">float64</span>
 <span class="c1">// Double 是 Float64 的	别名,在 Swift 中没有 Dubele</span>
@@ -150,7 +150,7 @@ Swift 是强类型语言</p>
   <li>布尔</li>
 </ul>
 
-<div class="language-swift highlighter-rouge"><pre class="highlight"><code><span class="k">var</span> <span class="nv">isBool</span> <span class="p">:</span><span class="kt">Bool</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">var</span> <span class="nv">isBool</span> <span class="p">:</span><span class="kt">Bool</span>
 <span class="c1">//布尔值不能用1 0 来赋值</span>
 <span class="n">isBool</span> <span class="o">=</span> <span class="n">ture</span>
 <span class="n">isBool</span> <span class="o">=</span> <span class="kc">false</span>
@@ -161,7 +161,7 @@ Swift 是强类型语言</p>
   <li>计算一个类型的大小</li>
 </ul>
 
-<div class="language-swift highlighter-rouge"><pre class="highlight"><code><span class="nf">sizeof</span><span class="p">(</span><span class="kt">Int</span><span class="p">)</span> 	<span class="c1">//8byte</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nf">sizeof</span><span class="p">(</span><span class="kt">Int</span><span class="p">)</span> 	<span class="c1">//8byte</span>
 <span class="nf">sizeof</span><span class="p">(</span><span class="kt">Float</span><span class="p">)</span>	<span class="c1">//4byte</span>
 <span class="nf">sizeof</span><span class="p">(</span><span class="kt">Int8</span><span class="p">)</span>	<span class="c1">//1byte</span>
 
@@ -172,7 +172,7 @@ Swift 是强类型语言</p>
   <li>字符串和字符</li>
 </ul>
 
-<div class="language-swift highlighter-rouge"><pre class="highlight"><code><span class="k">var</span> <span class="nv">str</span><span class="p">:</span><span class="kt">String</span> <span class="c1">//字符串直接标注,未使用时不能判断是否为空</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">var</span> <span class="nv">str</span><span class="p">:</span><span class="kt">String</span> <span class="c1">//字符串直接标注,未使用时不能判断是否为空</span>
 <span class="c1">//给字符串赋空值的几种方法</span>
 <span class="k">var</span> <span class="nv">str1</span> <span class="o">=</span> <span class="s">""</span>
 <span class="k">var</span> <span class="nv">str</span> <span class="o">=</span> <span class="kt">String</span><span class="p">()</span>
@@ -189,7 +189,7 @@ Swift 是强类型语言</p>
   <li>变量字符串的拼接</li>
 </ul>
 
-<div class="language-swift highlighter-rouge"><pre class="highlight"><code><span class="k">var</span> <span class="nv">i1</span> <span class="o">=</span> <span class="mi">10</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">var</span> <span class="nv">i1</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="k">var</span> <span class="nv">i2</span> <span class="o">=</span> <span class="n">i1</span>
 <span class="n">i1</span> <span class="o">=</span> <span class="mi">20</span>
 <span class="nf">print</span><span class="p">(</span><span class="n">q2</span><span class="p">)</span> <span class="c1">//20</span>
@@ -209,7 +209,7 @@ Swift 是强类型语言</p>
   <li>Swift 中的编码字符为 UNICODE 支持所有字符,包括表情符号</li>
 </ul>
 
-<div class="language-swift highlighter-rouge"><pre class="highlight"><code><span class="k">var</span> <span class="nv">表情符号</span> <span class="o">=</span> <span class="s">"🍨😱💃🏻"</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">var</span> <span class="nv">表情符号</span> <span class="o">=</span> <span class="s">"🍨😱💃🏻"</span>
 </code></pre>
 </div>
 
@@ -217,7 +217,7 @@ Swift 是强类型语言</p>
   <li>通过字符串数组创建字符串</li>
 </ul>
 
-<div class="language-swift highlighter-rouge"><pre class="highlight"><code><span class="k">var</span> <span class="nv">catCharacter</span> <span class="p">:</span> <span class="p">[</span><span class="kt">Character</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s">"C"</span><span class="p">,</span> <span class="s">"c"</span> <span class="p">,</span> <span class="s">"t"</span> <span class="p">,</span><span class="s">"!"</span><span class="p">]</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">var</span> <span class="nv">catCharacter</span> <span class="p">:</span> <span class="p">[</span><span class="kt">Character</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s">"C"</span><span class="p">,</span> <span class="s">"c"</span> <span class="p">,</span> <span class="s">"t"</span> <span class="p">,</span><span class="s">"!"</span><span class="p">]</span>
 <span class="k">var</span> <span class="nv">catString</span> <span class="o">=</span> <span class="kt">String</span><span class="p">(</span><span class="n">catCharacter</span><span class="p">)</span>
 </code></pre>
 </div>
@@ -226,7 +226,7 @@ Swift 是强类型语言</p>
   <li>字符串中的转译字符</li>
 </ul>
 
-<div class="language-swift highlighter-rouge"><pre class="highlight"><code> <span class="k">let</span> <span class="nv">myStr</span> <span class="o">=</span> <span class="s">"</span><span class="se">\"</span><span class="s">想象力比知识更重要</span><span class="se">\"</span><span class="s"> </span><span class="se">\n</span><span class="s"> --爱因斯坦"</span>
+<div class="highlighter-rouge"><pre class="highlight"><code> <span class="k">let</span> <span class="nv">myStr</span> <span class="o">=</span> <span class="s">"</span><span class="se">\"</span><span class="s">想象力比知识更重要</span><span class="se">\"</span><span class="s"> </span><span class="se">\n</span><span class="s"> --爱因斯坦"</span>
 </code></pre>
 </div>
 
@@ -234,7 +234,7 @@ Swift 是强类型语言</p>
   <li>字符串的格式化拼接</li>
 </ul>
 
-<div class="language-swift highlighter-rouge"><pre class="highlight"><code><span class="k">var</span> <span class="nv">hour</span> <span class="o">=</span> <span class="mi">2</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">var</span> <span class="nv">hour</span> <span class="o">=</span> <span class="mi">2</span>
 <span class="k">var</span> <span class="nv">min</span> <span class="o">=</span> <span class="mi">11</span>
 <span class="k">var</span> <span class="nv">secand</span> <span class="o">=</span> <span class="mi">22</span>
 <span class="nf">print</span><span class="p">(</span><span class="s">"</span><span class="se">\(</span><span class="n">hour</span><span class="se">)</span><span class="s">小时</span><span class="se">\(</span><span class="n">min</span><span class="se">)</span><span class="s"> 分钟</span><span class="se">\(</span><span class="n">secand</span><span class="se">)</span><span class="s"> 秒"</span><span class="p">)</span>  <span class="c1">//"2小时11 分钟22 秒\n"</span>
@@ -247,7 +247,7 @@ Swift 是强类型语言</p>
   <li>值类型 引用类型</li>
 </ul>
 
-<div class="language-swift highlighter-rouge"><pre class="highlight"><code><span class="c1">//[结构体] 都是值类型  [类 类型] 都是引用类型</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">//[结构体] 都是值类型  [类 类型] 都是引用类型</span>
 <span class="k">var</span> <span class="nv">str1</span> <span class="o">=</span> <span class="s">"Hello"</span>
 <span class="k">var</span> <span class="nv">str2</span> <span class="o">=</span> <span class="s">"World"</span>
 <span class="n">str1</span> <span class="o">+=</span> <span class="n">str2</span>							<span class="c1">//"HelloWorld"</span>
@@ -281,7 +281,7 @@ Swift 是强类型语言</p>
   <li>运算符</li>
 </ul>
 
-<div class="language-swift highlighter-rouge"><pre class="highlight"><code><span class="k">var</span> <span class="nv">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">d</span><span class="p">,</span><span class="n">e</span><span class="p">,</span><span class="n">f</span><span class="p">,</span><span class="nv">g</span> <span class="p">:</span><span class="kt">Int</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">var</span> <span class="nv">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">d</span><span class="p">,</span><span class="n">e</span><span class="p">,</span><span class="n">f</span><span class="p">,</span><span class="nv">g</span> <span class="p">:</span><span class="kt">Int</span>
 <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="n">b</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="c1">//swif 中的运算符 本质上就是一个函数</span>
@@ -338,7 +338,7 @@ Swift 是强类型语言</p>
   </li>
 </ul>
 
-<div class="language-swift highlighter-rouge"><pre class="highlight"><code><span class="k">var</span> <span class="nv">x</span> <span class="o">=</span> <span class="mi">10</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">var</span> <span class="nv">x</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="k">var</span> <span class="nv">y</span> <span class="o">=</span> <span class="mi">20</span>
 <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span> <span class="p">{</span>
     <span class="n">x</span>
@@ -391,7 +391,7 @@ default:
   <li>for 循环</li>
 </ul>
 
-<div class="language-swift highlighter-rouge"><pre class="highlight"><code><span class="c1">// 一行中出现多行语句 需要使用分号</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">// 一行中出现多行语句 需要使用分号</span>
 <span class="k">var</span> <span class="nv">x</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="k">var</span> <span class="nv">y</span> <span class="o">=</span> <span class="mi">10</span> <span class="p">;</span> <span class="k">var</span> <span class="nv">z</span> <span class="o">=</span> <span class="mi">100</span>
 
@@ -406,7 +406,7 @@ default:
   <li>while 循环</li>
 </ul>
 
-<div class="language-swift highlighter-rouge"><pre class="highlight"><code><span class="k">var</span> <span class="nv">i</span> <span class="o">=</span> <span class="mi">1</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">var</span> <span class="nv">i</span> <span class="o">=</span> <span class="mi">1</span>
 
 <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">{</span>
     <span class="n">i</span><span class="o">++</span>
@@ -426,7 +426,7 @@ default:
   <li>小练习 写一个循环 计算里面除了元音的字符</li>
 </ul>
 
-<div class="language-swift highlighter-rouge"><pre class="highlight"><code><span class="k">let</span> <span class="nv">message</span> <span class="o">=</span> <span class="s">"a place where people can play"</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">let</span> <span class="nv">message</span> <span class="o">=</span> <span class="s">"a place where people can play"</span>
 <span class="c1">//写一个程序 统计了 除了 a e i o u 之外有多少个字符</span>
 <span class="k">var</span> <span class="nv">n</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">ch</span> <span class="k">in</span> <span class="n">message</span><span class="o">.</span><span class="n">characters</span> <span class="p">{</span>
@@ -451,7 +451,7 @@ default:
   <li>break终止循环可以用标记</li>
 </ul>
 
-<div class="language-swift highlighter-rouge"><pre class="highlight"><code><span class="k">for</span> <span class="k">var</span> <span class="nv">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span> <span class="p">;</span> <span class="n">i</span><span class="o">++</span> <span class="p">{</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">for</span> <span class="k">var</span> <span class="nv">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span> <span class="p">;</span> <span class="n">i</span><span class="o">++</span> <span class="p">{</span>
     <span class="k">for</span> <span class="k">var</span> <span class="nv">j</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="mi">10</span> <span class="p">;</span> <span class="n">j</span><span class="o">++</span> <span class="p">{</span>
         <span class="k">if</span> <span class="n">j</span> <span class="o">==</span> <span class="mi">3</span> <span class="p">{</span>
             <span class="c1">//终止当前循环</span>

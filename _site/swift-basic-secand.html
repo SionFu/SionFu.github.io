@@ -82,7 +82,7 @@
   <li>元组的定义和访问</li>
 </ul>
 
-<div class="language-swift highlighter-rouge"><pre class="highlight"><code><span class="c1">//元祖 Tuple 将多个数据(可以是相同,也可以是不同的数据组织到一起 和C语言的结构体类似)</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">//元祖 Tuple 将多个数据(可以是相同,也可以是不同的数据组织到一起 和C语言的结构体类似)</span>
 <span class="p">(</span><span class="s">"姓名"</span><span class="p">,</span><span class="s">"张三"</span><span class="p">,</span><span class="s">"年龄"</span><span class="p">,</span><span class="mi">13</span><span class="p">)</span><span class="c1">//有四个属性</span>
 <span class="c1">//必须赋值或者声明属性</span>
 <span class="k">let</span> <span class="nv">http404Error</span> <span class="p">:</span> <span class="p">(</span><span class="kt">Int</span><span class="p">,</span> <span class="kt">String</span><span class="p">)</span>
@@ -111,7 +111,7 @@
   <li>元组和Switch</li>
 </ul>
 
-<div class="language-swift highlighter-rouge"><pre class="highlight"><code><span class="k">let</span> <span class="nv">onePrint</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">112</span><span class="p">)</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">let</span> <span class="nv">onePrint</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">112</span><span class="p">)</span>
 <span class="o">/**</span>
     <span class="n">判断一个点是否在原点上</span> <span class="n">如果在就输出</span> <span class="n">在原点上</span>
     <span class="n">判断这个点是否在x轴上</span>  <span class="n">如果在就输出</span> <span class="n">在x轴上</span>
@@ -164,7 +164,7 @@
 </div>
 <p>##可选类型 自动解包</p>
 
-<div class="language-swift highlighter-rouge"><pre class="highlight"><code><span class="o">/**</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="o">/**</span>
 <span class="n">只要可选值类型的</span> <span class="n">才可以赋值为nil</span>
 <span class="n">如果是可选值类型</span> <span class="n">则自动初始化nil</span>
 <span class="n">类型</span><span class="p">?</span> <span class="n">这是可选值类型的简写形式</span>
@@ -219,7 +219,7 @@
 
 <p>##断言</p>
 
-<div class="language-swift highlighter-rouge"><pre class="highlight"><code><span class="k">var</span> <span class="nv">x</span> <span class="o">=</span> <span class="mi">10001</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">var</span> <span class="nv">x</span> <span class="o">=</span> <span class="mi">10001</span>
 <span class="nf">assert</span><span class="p">(</span><span class="n">x</span> <span class="o">!=</span> <span class="mi">100</span><span class="p">)</span>
 
 <span class="kd">func</span> <span class="nf">testAssert</span><span class="p">(</span><span class="nv">partX</span> <span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="p">{</span>
@@ -235,7 +235,7 @@
 
 <p>##数组</p>
 
-<div class="language-swift highlighter-rouge"><pre class="highlight"><code><span class="c1">//线性结构 顺序</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">//线性结构 顺序</span>
 <span class="c1">//增 删 改 查 遍历</span>
 <span class="k">var</span> <span class="nv">arr</span> <span class="p">:</span> <span class="kt">Array</span><span class="o">&lt;</span><span class="kt">Int</span><span class="o">&gt;</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,]</span>   <span class="c1">//&lt;Int&gt;范形</span>
 
@@ -304,7 +304,7 @@
 
 <p>##字典</p>
 
-<div class="language-swift highlighter-rouge"><pre class="highlight"><code><span class="k">var</span> <span class="nv">dictinary1</span> <span class="p">:</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">Int</span><span class="o">&gt;</span> <span class="o">=</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">Int</span><span class="o">&gt;</span><span class="p">()</span> <span class="c1">//最标准的方式</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">var</span> <span class="nv">dictinary1</span> <span class="p">:</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">Int</span><span class="o">&gt;</span> <span class="o">=</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">Int</span><span class="o">&gt;</span><span class="p">()</span> <span class="c1">//最标准的方式</span>
 <span class="k">var</span> <span class="nv">dictinary2</span>  <span class="o">=</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">Int</span><span class="o">&gt;</span><span class="p">()</span>
 <span class="k">var</span> <span class="nv">dictinary3</span> <span class="p">:</span> <span class="kt">Dictionary</span> <span class="o">=</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">Int</span><span class="o">&gt;</span><span class="p">()</span>
 <span class="k">var</span> <span class="nv">dictinary4</span> <span class="p">:</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">Int</span><span class="o">&gt;</span> <span class="o">=</span> <span class="kt">Dictionary</span><span class="p">()</span>
@@ -376,7 +376,7 @@
 
 <p>##Set集合</p>
 
-<div class="language-swift highlighter-rouge"><pre class="highlight"><code><span class="c1">//Set 集合 特点就是不能有重复的数据</span>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">//Set 集合 特点就是不能有重复的数据</span>
 <span class="c1">//提供操作集合的api</span>
 <span class="c1">//消除重复数据</span>
 <span class="k">var</span> <span class="nv">letters</span> <span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">Character</span><span class="o">&gt;</span> <span class="o">=</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">Character</span><span class="o">&gt;</span><span class="p">()</span>
