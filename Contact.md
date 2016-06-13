@@ -13,7 +13,7 @@ permalink: /contact/
 
 ![weiChat](https://raw.githubusercontent.com/SionFu/SionFu.github.io/master/_site/images/WeChat.png)
 
-现居地：杭州市 三义锦唐苑
+现居地：浙江 衢州
 
 *加联系方式时请声明来自我的博客, Thanks*
 
