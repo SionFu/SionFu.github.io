@@ -7,7 +7,7 @@ date: 2016-05-22 20:26:29 +0800
 categories:  fdson update
 tag:  学习 swift
 ---
-##基本类型
+## 基本类型
 Swift 是强类型语言
 
 - var 声明变量

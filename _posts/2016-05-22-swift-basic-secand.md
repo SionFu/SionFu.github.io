@@ -10,7 +10,7 @@ tag:  学习 swift
 
 [Swift 基本数据类型一 http://fdson.com/swift-basic.html](http://fdson.com/swift-basic.html)
 
-##元组
+## 元组
 
 - 元组的定义和访问
 
@@ -92,7 +92,8 @@ default:
 }
 
 ```
-##可选类型 自动解包
+
+## 可选类型 自动解包
 
 ```swift
 /**
@@ -147,7 +148,7 @@ var  userName : UITextField?
 
 ```
 
-##断言
+## 断言
 
 ```swift
 var x = 10001
@@ -163,7 +164,7 @@ func testAssert(partX : Int) {
 testAssert(5)
 ```
 
-##数组
+## 数组
 
 ```swift
 //线性结构 顺序
@@ -232,7 +233,7 @@ for var i = 1 ; i <= subList.count  ; i++ {
 
 ```
 
-##字典
+## 字典
 
 ```swift
 var dictinary1 : Dictionary<String, Int> = Dictionary<String, Int>() //最标准的方式
@@ -304,7 +305,7 @@ nsdic2[1] //OC中的dictionary是引用(指针)类型
 
 ```
 
-##Set集合
+## Set集合
 
 ```swift
 //Set 集合 特点就是不能有重复的数据
