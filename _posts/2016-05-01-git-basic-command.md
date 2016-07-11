@@ -286,6 +286,7 @@ hello.php	test.tt
 倒序查看修改提交情况|`$ git log --reverse --oneline`
 查看作者SionFu在项目中的修改提交情况|`$ git log --author=SionFu --oneline `
 查询相关日期下的提交情况|`$ git log --oneline --before={3.weeks.ago} --after={2010-04-18} --no-merges`
+滚回某个节点|`git reset --hard SHA 值`
 
 
 
