@@ -23,7 +23,7 @@ tag:  学习 github Jekyll
 - 以上两个准备工作完成后，就可以打开 [Github](http://github.com) 创建工程了。
 
 
- ![GithubBlog](https://raw.githubusercontent.com/SionFu/SionFu.github.io/master/_site/mages/GithubBlog.png)
+ ![GithubBlog](https://raw.githubusercontent.com/SionFu/SionFu.github.io/master/_site/images/GithubBlog.png)
 
 
 
