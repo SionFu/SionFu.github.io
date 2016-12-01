@@ -8,8 +8,8 @@ categories: fdson update
 tag:  学习 github Jekyll
 ---
 ## 首先需要注册一个 GitHub 账号
-- 在注册账号上有点需要注意的就是用户名, 用户就是以后博客的地址就像SionFu.github.io 这里 SionFu 就是我的 GitHub 用户名, 不过没有注册到你想要的用户名也没事, 还有一个办法就是绑定个人域名, 在后面我会说说怎么绑定自己的域名。
-- 在电脑上安装环境 [Jekyll](http://jekyll.bootcss.com)这里是一个中文版的安装教程在 Mac 下一下几行命令就能完成安装
+- 在注册账号上有点需要注意的就是用户名, 用户就是以后博客的地址就像 [SionFu.github.io](http://SionFu.github.io) 这里 SionFu 就是我的 GitHub 用户名, 不过没有注册到你想要的用户名也没事, 还有一个办法就是绑定个人域名, 在后面我会说说怎么绑定自己的域名。
+- 在电脑上安装环境 [Jekyll](http://jekyll.bootcss.com) 这里是一个中文版的安装教程在 Mac 下一下几行命令就能完成安装
 
 ```
  $ gem install jekyll
