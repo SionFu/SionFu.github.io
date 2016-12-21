@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
   <channel>
     <title>Fu_sion</title>
     <description>一个正在积极学习 OC和Swift中的码农！&lt;/br&gt; 很高兴能在这里和你一起交流！
 </description>
-    <link>http://fdson.com/</link>
-    <atom:link href="http://fdson.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 24 Aug 2016 15:48:05 +0800</pubDate>
-    <lastBuildDate>Wed, 24 Aug 2016 15:48:05 +0800</lastBuildDate>
+    <link>https://fdson.com/</link>
+    <atom:link href="https://fdson.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 21 Dec 2016 21:35:41 +0800</pubDate>
+    <lastBuildDate>Wed, 21 Dec 2016 21:35:41 +0800</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
     
       <item>
@@ -272,8 +272,8 @@
 
 </description>
         <pubDate>Wed, 01 Jun 2016 08:18:29 +0800</pubDate>
-        <link>http://fdson.com/swift-basic-function.html</link>
-        <guid isPermaLink="true">http://fdson.com/swift-basic-function.html</guid>
+        <link>https://fdson.com/swift-basic-function.html</link>
+        <guid isPermaLink="true">https://fdson.com/swift-basic-function.html</guid>
         
         <category>学习 swift</category>
         
@@ -646,8 +646,8 @@
 
 </description>
         <pubDate>Tue, 31 May 2016 18:43:29 +0800</pubDate>
-        <link>http://fdson.com/swift-basic-secand.html</link>
-        <guid isPermaLink="true">http://fdson.com/swift-basic-secand.html</guid>
+        <link>https://fdson.com/swift-basic-secand.html</link>
+        <guid isPermaLink="true">https://fdson.com/swift-basic-secand.html</guid>
         
         <category>学习 swift</category>
         
@@ -789,8 +789,8 @@ Configuration file: /Users/Fusion/test/_config.yml
 
 </description>
         <pubDate>Mon, 23 May 2016 01:00:22 +0800</pubDate>
-        <link>http://fdson.com/jekyll-webpage.html</link>
-        <guid isPermaLink="true">http://fdson.com/jekyll-webpage.html</guid>
+        <link>https://fdson.com/jekyll-webpage.html</link>
+        <guid isPermaLink="true">https://fdson.com/jekyll-webpage.html</guid>
         
         <category>学习 github Jekyll</category>
         
@@ -1204,8 +1204,8 @@ default:
 
 </description>
         <pubDate>Sun, 22 May 2016 20:26:29 +0800</pubDate>
-        <link>http://fdson.com/swift-basic.html</link>
-        <guid isPermaLink="true">http://fdson.com/swift-basic.html</guid>
+        <link>https://fdson.com/swift-basic.html</link>
+        <guid isPermaLink="true">https://fdson.com/swift-basic.html</guid>
         
         <category>学习 swift</category>
         
@@ -1281,8 +1281,8 @@ default:
 
 </description>
         <pubDate>Sat, 07 May 2016 23:58:29 +0800</pubDate>
-        <link>http://fdson.com/split-screen-demo.html</link>
-        <guid isPermaLink="true">http://fdson.com/split-screen-demo.html</guid>
+        <link>https://fdson.com/split-screen-demo.html</link>
+        <guid isPermaLink="true">https://fdson.com/split-screen-demo.html</guid>
         
         <category>学习 OC</category>
         
@@ -1595,8 +1595,8 @@ hello.php	test.tt
 
 </description>
         <pubDate>Sun, 01 May 2016 09:34:57 +0800</pubDate>
-        <link>http://fdson.com/git-basic-command.html</link>
-        <guid isPermaLink="true">http://fdson.com/git-basic-command.html</guid>
+        <link>https://fdson.com/git-basic-command.html</link>
+        <guid isPermaLink="true">https://fdson.com/git-basic-command.html</guid>
         
         <category>Git 学习</category>
         
@@ -1631,8 +1631,8 @@ hello.php	test.tt
 
 </description>
         <pubDate>Sat, 30 Apr 2016 02:17:07 +0800</pubDate>
-        <link>http://fdson.com/all-of-2015.html</link>
-        <guid isPermaLink="true">http://fdson.com/all-of-2015.html</guid>
+        <link>https://fdson.com/all-of-2015.html</link>
+        <guid isPermaLink="true">https://fdson.com/all-of-2015.html</guid>
         
         <category>经历</category>
         
@@ -1650,8 +1650,8 @@ hello.php	test.tt
 
 </description>
         <pubDate>Sat, 30 Apr 2016 01:12:38 +0800</pubDate>
-        <link>http://fdson.com/first-blog-in-git.html</link>
-        <guid isPermaLink="true">http://fdson.com/first-blog-in-git.html</guid>
+        <link>https://fdson.com/first-blog-in-git.html</link>
+        <guid isPermaLink="true">https://fdson.com/first-blog-in-git.html</guid>
         
         <category>写作</category>
         
@@ -1680,8 +1680,8 @@ hello.php	test.tt
 
 </description>
         <pubDate>Sat, 30 Apr 2016 00:26:38 +0800</pubDate>
-        <link>http://fdson.com/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://fdson.com/welcome-to-jekyll.html</guid>
+        <link>https://fdson.com/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">https://fdson.com/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
