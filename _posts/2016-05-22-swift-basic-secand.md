@@ -8,7 +8,7 @@ categories:  fdson update
 tag:  学习 swift
 ---
 
-[Swift 基本数据类型一 http://fdson.com/swift-basic.html](http://fdson.com/swift-basic.html)
+[Swift 基本数据类型一 https://fdson.com/swift-basic.html](https://fdson.com/swift-basic.html)
 
 ## 元组
 

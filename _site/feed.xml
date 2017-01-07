@@ -6,15 +6,13 @@
 </description>
     <link>https://fdson.com/</link>
     <atom:link href="https://fdson.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 08 Jan 2017 00:39:21 +0800</pubDate>
-    <lastBuildDate>Sun, 08 Jan 2017 00:39:21 +0800</lastBuildDate>
+    <pubDate>Sun, 08 Jan 2017 00:45:18 +0800</pubDate>
+    <lastBuildDate>Sun, 08 Jan 2017 00:45:18 +0800</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
     
       <item>
         <title>2016年12月31日</title>
-        <description>&lt;h2 id=&quot;section&quot;&gt;2016年12月31日&lt;/h2&gt;
-
-&lt;h3 id=&quot;section-1&quot;&gt;今年你都做了啥? （默默打开了相册）&lt;/h3&gt;
+        <description>&lt;h3 id=&quot;section&quot;&gt;今年你都做了啥? （默默打开了相册）&lt;/h3&gt;
 
 &lt;ol&gt;
   &lt;li&gt;12-2月份结束学校的杂事(地标：上海)。&lt;img src=&quot;https://ww1.sinaimg.cn/mw690/6a86953fjw1fbaaixfnufj20sg0lc0zw.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/li&gt;
@@ -36,7 +34,7 @@
   &lt;li&gt;2017年1月1日 公司重组，期待💪🏼，小涨工资，什么时候能用两位数的K来计算工资。（地标：XX)&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&quot;section-2&quot;&gt;今年你哪些收获? 什么对你的影响最大? （打开回忆）&lt;/h3&gt;
+&lt;h3 id=&quot;section-1&quot;&gt;今年你哪些收获? 什么对你的影响最大? （打开回忆）&lt;/h3&gt;
 
 &lt;ol&gt;
   &lt;li&gt;越困难的时候收获最多, 也是最充实的。学习：80&lt;/li&gt;
@@ -44,7 +42,7 @@
   &lt;li&gt;个人感情： &amp;lt; 60 不及格&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&quot;section-3&quot;&gt;看、听 书影音有哪些？（打开豆瓣，网易音乐）&lt;/h3&gt;
+&lt;h3 id=&quot;section-2&quot;&gt;看、听 书影音有哪些？（打开豆瓣，网易音乐）&lt;/h3&gt;
 
 &lt;ol&gt;
   &lt;li&gt;📚 居然想不起来自己看过什么书 一本是OC 一本是行测和民法吧。(明年得好好理理 你要看的书)&lt;/li&gt;
@@ -63,7 +61,8 @@
   &lt;li&gt;….&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&quot;section-4&quot;&gt;运动&lt;/h3&gt;
+&lt;h3 id=&quot;section-3&quot;&gt;运动&lt;/h3&gt;
+
 &lt;p&gt;走走停停&lt;img src=&quot;https://wx3.sinaimg.cn/large/6a86953fly1fbaedh3i7hj20qo1beq6r.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
 </description>
@@ -356,7 +355,7 @@
     
       <item>
         <title>Swift 基本数据类型二</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://fdson.com/swift-basic.html&quot;&gt;Swift 基本数据类型一 http://fdson.com/swift-basic.html&lt;/a&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;a href=&quot;https://fdson.com/swift-basic.html&quot;&gt;Swift 基本数据类型一 https://fdson.com/swift-basic.html&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;section&quot;&gt;元组&lt;/h2&gt;
 
