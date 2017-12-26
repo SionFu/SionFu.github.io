@@ -94,7 +94,16 @@ app.html
 
 ```
 https://fdson.com/apps/test.html
-
 ```
+
+<!---->
+ 
+- 生成文件
+
+![archive](https://raw.githubusercontent.com/SionFu/SionFu.github.io/master/_site/images/archive.png)
+
+- 导出文件
+
+![iosHoc](https://raw.githubusercontent.com/SionFu/SionFu.github.io/master/_site/images/iosHoc.png)
 
 
