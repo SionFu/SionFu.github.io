@@ -29,7 +29,7 @@ tag: Weaver  学习
 
 - 电脑版本的已经开发好，只需要手机端调用相关接口就可以
  
-![GithubBlog](https://raw.githubusercontent.com/SionFu/SionFu.github.io/master/_site/images/findLeaveFrome.png)
+![findLeaveFrome](https://raw.githubusercontent.com/SionFu/SionFu.github.io/master/_site/images/findLeaveFrome.png)
 
 ## 从数据库取数相关的请假数据
 
