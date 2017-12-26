@@ -6,8 +6,8 @@
 </description>
     <link>https://fdson.com/</link>
     <atom:link href="https://fdson.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 26 Dec 2017 16:59:37 +0800</pubDate>
-    <lastBuildDate>Tue, 26 Dec 2017 16:59:37 +0800</lastBuildDate>
+    <pubDate>Tue, 26 Dec 2017 17:03:01 +0800</pubDate>
+    <lastBuildDate>Tue, 26 Dec 2017 17:03:01 +0800</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
     
       <item>
@@ -148,11 +148,16 @@
 
 &lt;ul&gt;
   &lt;li&gt;电脑版本的已经开发好，只需要手机端调用相关接口就可以&lt;/li&gt;
+  &lt;li&gt;view.jsp&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/SionFu/SionFu.github.io/master/_site/images/findLeaveFrome.png&quot; alt=&quot;findLeaveFrome&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;section-2&quot;&gt;从数据库取数相关的请假数据&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;leaverAjx.jsp&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;function getWorkAjaxValue(resourceId,formid){
 
