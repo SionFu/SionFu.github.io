@@ -14,8 +14,8 @@
 
   <link rel="stylesheet" href="/css/main.css">
 
-  <link rel="canonical" href="https://fdson.com/weaver-moblie-dev.html">
-  <link rel="alternate" type="application/rss+xml" title="Fu_sion" href="https://fdson.com/feed.xml">
+  <link rel="canonical" href="http://localhost:4000/weaver-moblie-dev.html">
+  <link rel="alternate" type="application/rss+xml" title="Fu_sion" href="http://localhost:4000/feed.xml">
 </head>
 
 
@@ -74,10 +74,9 @@
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <h2 id="section">文档目录结构</h2>
+    <h2 id="文档目录结构">文档目录结构</h2>
 
-<p><code class="highlighter-rouge">
- -D:	
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> -D:	
  	-weaver
  		-ecology
  			-mobile
@@ -89,9 +88,9 @@
  			-interface
  				-custompage
  					-leavecustompage.jsp  /*桌面版调用页面*/	 	
-</code></p>
+</code></pre></div></div>
 
-<h2 id="section-1">判断是否为请假表单</h2>
+<h2 id="判断是否为请假表单">判断是否为请假表单</h2>
 
 <ul>
   <li>电脑版本的已经开发好，只需要手机端调用相关接口就可以</li>
@@ -100,13 +99,13 @@
 
 <p><img src="https://raw.githubusercontent.com/SionFu/SionFu.github.io/master/_site/images/findLeaveFrome.png" alt="findLeaveFrome" /></p>
 
-<h2 id="section-2">从数据库取数相关的请假数据</h2>
+<h2 id="从数据库取数相关的请假数据">从数据库取数相关的请假数据</h2>
 
 <ul>
   <li>leaverAjx.jsp</li>
 </ul>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>function getWorkAjaxValue(resourceId,formid){
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getWorkAjaxValue(resourceId,formid){
 
 		jQuery.ajax({
 			type:"POST",
@@ -137,8 +136,7 @@
 		});
 		
 }
-</code></pre>
-</div>
+</code></pre></div></div>
 
 
   </div>

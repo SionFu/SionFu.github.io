@@ -14,8 +14,8 @@
 
   <link rel="stylesheet" href="/css/main.css">
 
-  <link rel="canonical" href="https://fdson.com/ios-hoc-distribute.html">
-  <link rel="alternate" type="application/rss+xml" title="Fu_sion" href="https://fdson.com/feed.xml">
+  <link rel="canonical" href="http://localhost:4000/ios-hoc-distribute.html">
+  <link rel="alternate" type="application/rss+xml" title="Fu_sion" href="http://localhost:4000/feed.xml">
 </head>
 
 
@@ -74,7 +74,7 @@
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <h2 id="section">发布内容需要三个文件</h2>
+    <h2 id="发布内容需要三个文件">发布内容需要三个文件</h2>
 
 <ol>
   <li>test.plist</li>
@@ -89,7 +89,7 @@
 
 <p>test.plist</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
 <span class="cp">&lt;!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"&gt;</span>
 <span class="nt">&lt;plist</span> <span class="na">version=</span><span class="s">"1.0"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;dict&gt;</span>
@@ -139,13 +139,12 @@
 <span class="nt">&lt;/dict&gt;</span>
 <span class="nt">&lt;/plist&gt;</span>
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>app.html
 <em>这里的 plist文件 必须放置在 https 的地址下</em></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html&gt;</span>
 <span class="nt">&lt;head&gt;</span>
 	<span class="nt">&lt;title&gt;</span>install App<span class="nt">&lt;/title&gt;</span>
@@ -154,14 +153,12 @@
 	<span class="nt">&lt;h2&gt;&lt;center&gt;&lt;a</span> <span class="na">href=</span><span class="s">"itms-services://?action=download-manifest&amp;url=https://www.fdson.com/apps/test.plist"</span> <span class="na">id=</span><span class="s">"text"</span><span class="nt">&gt;</span>install fdson App<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;/center&gt;&lt;/h2&gt;</span>
 <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>这样访问以下地址就可以下载企业版本的 APP 了，需要在设置 -&gt; 通用 -&gt; 证书 -信任此证书</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>https://fdson.com/apps/test.html
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://fdson.com/apps/test.html
+</code></pre></div></div>
 
 <!---->
 

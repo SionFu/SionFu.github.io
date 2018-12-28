@@ -14,8 +14,8 @@
 
   <link rel="stylesheet" href="/css/main.css">
 
-  <link rel="canonical" href="https://fdson.com/swift-basic-secand.html">
-  <link rel="alternate" type="application/rss+xml" title="Fu_sion" href="https://fdson.com/feed.xml">
+  <link rel="canonical" href="http://localhost:4000/swift-basic-secand.html">
+  <link rel="alternate" type="application/rss+xml" title="Fu_sion" href="http://localhost:4000/feed.xml">
 </head>
 
 
@@ -76,13 +76,13 @@
   <div class="post-content" itemprop="articleBody">
     <p><a href="https://fdson.com/swift-basic.html">Swift 基本数据类型一 https://fdson.com/swift-basic.html</a></p>
 
-<h2 id="section">元组</h2>
+<h2 id="元组">元组</h2>
 
 <ul>
   <li>元组的定义和访问</li>
 </ul>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">//元祖 Tuple 将多个数据(可以是相同,也可以是不同的数据组织到一起 和C语言的结构体类似)</span>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//元祖 Tuple 将多个数据(可以是相同,也可以是不同的数据组织到一起 和C语言的结构体类似)</span>
 <span class="p">(</span><span class="s">"姓名"</span><span class="p">,</span><span class="s">"张三"</span><span class="p">,</span><span class="s">"年龄"</span><span class="p">,</span><span class="mi">13</span><span class="p">)</span><span class="c1">//有四个属性</span>
 <span class="c1">//必须赋值或者声明属性</span>
 <span class="k">let</span> <span class="nv">http404Error</span> <span class="p">:</span> <span class="p">(</span><span class="kt">Int</span><span class="p">,</span> <span class="kt">String</span><span class="p">)</span>
@@ -104,20 +104,19 @@
  <span class="n">http500Error</span><span class="o">.</span><span class="n">code</span>
 <span class="n">http500Error</span><span class="o">.</span><span class="n">description</span>
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <ul>
   <li>元组和Switch</li>
 </ul>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">let</span> <span class="nv">onePrint</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">112</span><span class="p">)</span>
-<span class="o">/**</span>
-    <span class="n">判断一个点是否在原点上</span> <span class="n">如果在就输出</span> <span class="n">在原点上</span>
-    <span class="n">判断这个点是否在x轴上</span>  <span class="n">如果在就输出</span> <span class="n">在x轴上</span>
-    <span class="n">判断这个点是否在y轴上</span>  <span class="n">如果是就输出</span> <span class="n">在y轴上</span>
-    <span class="n">判断这个点是否在</span> <span class="o">-</span><span class="mi">20</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="o">-</span><span class="mi">20</span><span class="p">,</span> <span class="mi">20</span> <span class="n">矩形范围内</span> <span class="n">否则输出在其他位置</span>
-<span class="o">*/</span>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">let</span> <span class="nv">onePrint</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">112</span><span class="p">)</span>
+<span class="cm">/**
+    判断一个点是否在原点上 如果在就输出 在原点上
+    判断这个点是否在x轴上  如果在就输出 在x轴上
+    判断这个点是否在y轴上  如果是就输出 在y轴上
+    判断这个点是否在 -20, 20, -20, 20 矩形范围内 否则输出在其他位置
+*/</span>
 
 <span class="k">switch</span> <span class="n">onePrint</span> <span class="p">{</span>
 <span class="k">case</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">):</span>
@@ -131,12 +130,12 @@
 <span class="k">default</span><span class="p">:</span>
     <span class="nf">print</span><span class="p">(</span><span class="s">"不在这个范围内"</span><span class="p">)</span>
 <span class="p">}</span>
-<span class="o">/**</span>
-<span class="n">写一个程序</span> <span class="n">定义一个元组</span> <span class="n">代表一个点</span> 
-    <span class="n">判断这个点是不是在x</span> <span class="o">==</span> <span class="n">y</span> <span class="n">的斜线</span> <span class="n">上</span> <span class="n">如果在就答应x</span> <span class="n">和</span> <span class="n">y相等的斜线1</span> <span class="n">上</span>
-    <span class="n">在判断这个点是不是在</span> <span class="n">x</span> <span class="o">==</span> <span class="o">-</span><span class="n">y</span> <span class="n">的斜线2上</span> <span class="n">如果是就答应在</span> <span class="n">反斜线上</span>
-    <span class="n">如果还不是</span> <span class="n">就打印不在斜线</span> <span class="n">和反斜线上</span>
-<span class="o">*/</span>
+<span class="cm">/**
+写一个程序 定义一个元组 代表一个点 
+    判断这个点是不是在x == y 的斜线 上 如果在就答应x 和 y相等的斜线1 上
+    在判断这个点是不是在 x == -y 的斜线2上 如果是就答应在 反斜线上
+    如果还不是 就打印不在斜线 和反斜线上
+*/</span>
 
 <span class="k">let</span> <span class="nv">otherPrint</span> <span class="p">:</span> <span class="p">(</span><span class="kt">Int</span><span class="p">,</span> <span class="kt">Int</span><span class="p">)</span>
 <span class="n">otherPrint</span> <span class="o">=</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">)</span>					<span class="c1">//(.0 4, .1 -4)</span>
@@ -152,24 +151,23 @@
 
 
 <span class="k">switch</span> <span class="n">otherPrint</span> <span class="p">{</span>
-<span class="k">case</span> <span class="nf">let</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="k">where</span> <span class="n">x</span> <span class="o">==</span> <span class="nv">y</span> <span class="p">:</span>
+<span class="k">case</span> <span class="k">let</span><span class="p">(</span><span class="nv">x</span><span class="p">,</span> <span class="nv">y</span><span class="p">)</span> <span class="k">where</span> <span class="n">x</span> <span class="o">==</span> <span class="nv">y</span> <span class="p">:</span>
     <span class="nf">print</span><span class="p">(</span><span class="s">"在斜线上"</span><span class="p">)</span>
-<span class="k">case</span> <span class="nf">let</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="k">where</span> <span class="n">x</span> <span class="o">==</span> <span class="o">-</span><span class="nv">y</span> <span class="p">:</span>
+<span class="k">case</span> <span class="k">let</span><span class="p">(</span><span class="nv">x</span><span class="p">,</span> <span class="nv">y</span><span class="p">)</span> <span class="k">where</span> <span class="n">x</span> <span class="o">==</span> <span class="o">-</span><span class="nv">y</span> <span class="p">:</span>
     <span class="nf">print</span><span class="p">(</span><span class="s">"在反斜线上"</span><span class="p">)</span>					<span class="c1">//"在反斜线上\n"</span>
 <span class="k">default</span><span class="p">:</span>
     <span class="nf">print</span><span class="p">(</span><span class="s">"不在线上"</span><span class="p">)</span>
 <span class="p">}</span>
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
-<h2 id="section-1">可选类型 自动解包</h2>
+<h2 id="可选类型-自动解包">可选类型 自动解包</h2>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="o">/**</span>
-<span class="n">只要可选值类型的</span> <span class="n">才可以赋值为nil</span>
-<span class="n">如果是可选值类型</span> <span class="n">则自动初始化nil</span>
-<span class="n">类型</span><span class="p">?</span> <span class="n">这是可选值类型的简写形式</span>
-<span class="o">*/</span>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/**
+只要可选值类型的 才可以赋值为nil
+如果是可选值类型 则自动初始化nil
+类型? 这是可选值类型的简写形式
+*/</span>
 
 <span class="k">var</span> <span class="nv">y</span> <span class="p">:</span> <span class="kt">Int</span><span class="p">?</span>								<span class="c1">//nil</span>
 <span class="n">y</span> <span class="o">=</span> <span class="kc">nil</span>									<span class="c1">//nil</span>
@@ -215,12 +213,11 @@
 
 <span class="k">var</span>  <span class="nv">userName</span> <span class="p">:</span> <span class="kt">UITextField</span><span class="p">?</span>
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
-<h2 id="section-2">断言</h2>
+<h2 id="断言">断言</h2>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">var</span> <span class="nv">x</span> <span class="o">=</span> <span class="mi">10001</span>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">var</span> <span class="nv">x</span> <span class="o">=</span> <span class="mi">10001</span>
 <span class="nf">assert</span><span class="p">(</span><span class="n">x</span> <span class="o">!=</span> <span class="mi">100</span><span class="p">)</span>
 
 <span class="kd">func</span> <span class="nf">testAssert</span><span class="p">(</span><span class="nv">partX</span> <span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="p">{</span>
@@ -231,12 +228,11 @@
 <span class="p">}</span>
 <span class="c1">//只有在条件成立才会向下运行</span>
 <span class="nf">testAssert</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
-<h2 id="section-3">数组</h2>
+<h2 id="数组">数组</h2>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">//线性结构 顺序</span>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//线性结构 顺序</span>
 <span class="c1">//增 删 改 查 遍历</span>
 <span class="k">var</span> <span class="nv">arr</span> <span class="p">:</span> <span class="kt">Array</span><span class="o">&lt;</span><span class="kt">Int</span><span class="o">&gt;</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,]</span>   <span class="c1">//&lt;Int&gt;范形</span>
 
@@ -300,12 +296,11 @@
     <span class="nf">print</span><span class="p">(</span><span class="n">subList</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
 <span class="p">}</span>
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
-<h2 id="section-4">字典</h2>
+<h2 id="字典">字典</h2>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">var</span> <span class="nv">dictinary1</span> <span class="p">:</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">Int</span><span class="o">&gt;</span> <span class="o">=</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">Int</span><span class="o">&gt;</span><span class="p">()</span> <span class="c1">//最标准的方式</span>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">var</span> <span class="nv">dictinary1</span> <span class="p">:</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">Int</span><span class="o">&gt;</span> <span class="o">=</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">Int</span><span class="o">&gt;</span><span class="p">()</span> <span class="c1">//最标准的方式</span>
 <span class="k">var</span> <span class="nv">dictinary2</span>  <span class="o">=</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">Int</span><span class="o">&gt;</span><span class="p">()</span>
 <span class="k">var</span> <span class="nv">dictinary3</span> <span class="p">:</span> <span class="kt">Dictionary</span> <span class="o">=</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">Int</span><span class="o">&gt;</span><span class="p">()</span>
 <span class="k">var</span> <span class="nv">dictinary4</span> <span class="p">:</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">Int</span><span class="o">&gt;</span> <span class="o">=</span> <span class="kt">Dictionary</span><span class="p">()</span>
@@ -372,12 +367,11 @@
 <span class="n">nsdic</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s">"1⃣️"</span>
 <span class="n">nsdic2</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="c1">//OC中的dictionary是引用(指针)类型</span>
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
-<h2 id="set">Set集合</h2>
+<h2 id="set集合">Set集合</h2>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">//Set 集合 特点就是不能有重复的数据</span>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//Set 集合 特点就是不能有重复的数据</span>
 <span class="c1">//提供操作集合的api</span>
 <span class="c1">//消除重复数据</span>
 <span class="k">var</span> <span class="nv">letters</span> <span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">Character</span><span class="o">&gt;</span> <span class="o">=</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">Character</span><span class="o">&gt;</span><span class="p">()</span>
@@ -429,8 +423,7 @@
 <span class="n">newNums</span> <span class="o">=</span> <span class="n">oddDigits</span><span class="o">.</span><span class="nf">exclusiveOr</span><span class="p">(</span><span class="n">evenDigits</span><span class="p">)</span>
 
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
 
   </div>

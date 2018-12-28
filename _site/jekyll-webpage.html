@@ -14,8 +14,8 @@
 
   <link rel="stylesheet" href="/css/main.css">
 
-  <link rel="canonical" href="https://fdson.com/jekyll-webpage.html">
-  <link rel="alternate" type="application/rss+xml" title="Fu_sion" href="https://fdson.com/feed.xml">
+  <link rel="canonical" href="http://localhost:4000/jekyll-webpage.html">
+  <link rel="alternate" type="application/rss+xml" title="Fu_sion" href="http://localhost:4000/feed.xml">
 </head>
 
 
@@ -74,30 +74,28 @@
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <h3 id="section">用到的命令</h3>
+    <h3 id="用到的命令">用到的命令</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code> $ gem install jekyll
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ gem install jekyll
  $ jekyll new my-awesome-site
  $ jekyll build    //写完文章之后需要 build 下
  $ jekyll serve		//启动服务
  $ rake //新建文章 需要添加 Rakefile 文件
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
-<h2 id="github-">首先需要注册一个 GitHub 账号</h2>
+<h2 id="首先需要注册一个-github-账号">首先需要注册一个 GitHub 账号</h2>
 <ul>
   <li>在注册账号上有点需要注意的就是用户名, 用户就是以后博客的地址就像 <a href="http://SionFu.github.io">SionFu.github.io</a> 这里 SionFu 就是我的 GitHub 用户名, 不过没有注册到你想要的用户名也没事, 还有一个办法就是绑定个人域名, 在后面我会说说怎么绑定自己的域名。</li>
   <li>在电脑上安装环境 <a href="http://jekyll.bootcss.com">Jekyll</a> 这里是一个中文版的安装教程在 Mac 下一下几行命令就能完成安装</li>
 </ul>
 
-<div class="highlighter-rouge"><pre class="highlight"><code> $ gem install jekyll
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ gem install jekyll
 ~ $ jekyll new my-awesome-site
 ~ $ cd my-awesome-site
 ~/my-awesome-site $ jekyll serve
 # =&gt; Now browse to http://localhost:4000
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <ul>
   <li>安装过程中出现问题可以 Google 百度, 我主要想说的是些我碰到的需要注意的地方,当然你想继续研究对 scc , js 感兴趣,也可以深读这个<a href="http://jekyll.bootcss.com">Jekyll</a>网站上面虽然有些翻译的一般, 但是还是很详细的。</li>
@@ -106,9 +104,8 @@
 
 <p><img src="https://raw.githubusercontent.com/SionFu/SionFu.github.io/master/_site/images/GithubBlog.png" alt="GithubBlog" /></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>这里在棕色框内必须填写**用户名**.Github.io 才能创建博客项目,且一个账号就只能创建一个这样的项目。 - 如果这里项目名写错了, 也可以在后面再修改
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>这里在棕色框内必须填写**用户名**.Github.io 才能创建博客项目,且一个账号就只能创建一个这样的项目。 - 如果这里项目名写错了, 也可以在后面再修改
+</code></pre></div></div>
 
 <p><img src="https://raw.githubusercontent.com/SionFu/SionFu.github.io/master/_site/images/changename.png" alt="changename" /></p>
 
@@ -125,7 +122,7 @@
   <li>用终端进入到刚刚 clone 下来的项目的文件夹上次层,用命令<code class="highlighter-rouge">jekyll new 你的项目名</code> 例如我的<code class="highlighter-rouge">jekyll new SionFu.giuhub.io</code> 这样就创建好了你的个人静态博客, 接下来是配置打开项目里的<code class="highlighter-rouge">_config.yml</code>文件</li>
 </ul>
 
-<div class="highlighter-rouge"><pre class="highlight"><code># Welcome to Jekyll!
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely need to edit after that.
@@ -147,37 +144,34 @@ github_username:  你的 github 用户名
 # Build settings
 markdown: kramdown
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <ul>
   <li>ok 一切就绪,这里需<strong>要注意</strong>的一个地方是, 在配置文件的前和配置名之前需要有个空格!比如<code class="highlighter-rouge">title:[一个空格]Fu_sion</code>不然就 bulid 不成功</li>
   <li>接下来在终端运行 <code class="highlighter-rouge">$ jekyll build</code></li>
 </ul>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>Configuration file: /Users/Fusion/test/_config.yml
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Configuration file: /Users/Fusion/test/_config.yml
             Source: /Users/Fusion/test
        Destination: /Users/Fusion/test/_site
  Incremental build: disabled. Enable with --incremental
       Generating... 
                     done in 0.348 seconds.
  Auto-regeneration: disabled. Use --watch to enable.
-</code></pre>
-</div>
+</code></pre></div></div>
 <p>看到这样的提示基本成功了 只差最后一步</p>
 
 <ul>
   <li>然后是 <code class="highlighter-rouge">$ jekyll server</code></li>
 </ul>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>      Generating... 
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      Generating... 
                     done in 0.25 seconds.
  Auto-regeneration: enabled for '/Users/Fusion/test'
 Configuration file: /Users/Fusion/test/_config.yml
     Server address: http://127.0.0.1:4000/
   Server running... press ctrl-c to stop.
-</code></pre>
-</div>
+</code></pre></div></div>
 <p>看到这个信息, 已经离成功很进了
 点击这个<a href="http://127.0.0.1:4000/">LocalHost</a>就能看到你的博客的样子了
 <img src="https://raw.githubusercontent.com/SionFu/SionFu.github.io/master/_site/images/JekyllBlog.png" alt="JekyllBlog" /></p>

@@ -14,8 +14,8 @@
 
   <link rel="stylesheet" href="/css/main.css">
 
-  <link rel="canonical" href="https://fdson.com/split-screen-demo.html">
-  <link rel="alternate" type="application/rss+xml" title="Fu_sion" href="https://fdson.com/feed.xml">
+  <link rel="canonical" href="http://localhost:4000/split-screen-demo.html">
+  <link rel="alternate" type="application/rss+xml" title="Fu_sion" href="http://localhost:4000/feed.xml">
 </head>
 
 
@@ -81,14 +81,14 @@
   <li>代码</li>
 </ol>
 
-<figure class="highlight"><pre><code class="language-objc" data-lang="objc"><span class="c1">//
-//  ViewController.m
-//  test_分屏
-//
-//  Created by Fu_sion on 16/4/16.
-//  Copyright © 2016年 Fu_sion. All rights reserved.
-//
-</span>
+<figure class="highlight"><pre><code class="language-objc" data-lang="objc"><span class="c1">//</span>
+<span class="c1">//  ViewController.m</span>
+<span class="c1">//  test_分屏</span>
+<span class="c1">//</span>
+<span class="c1">//  Created by Fu_sion on 16/4/16.</span>
+<span class="c1">//  Copyright © 2016年 Fu_sion. All rights reserved.</span>
+<span class="c1">//</span>
+
 <span class="cp">#import "ViewController.h"
 </span>
 <span class="k">@interface</span> <span class="nc">ViewController</span> <span class="p">()</span>
@@ -106,16 +106,16 @@
 
 <span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">viewDidLoad</span> <span class="p">{</span>
     <span class="p">[</span><span class="n">super</span> <span class="nf">viewDidLoad</span><span class="p">];</span>
-    <span class="c1">// Do any additional setup after loading the view, typically from a nib.
-</span>    <span class="p">[</span><span class="n">self</span> <span class="nf">cutScreenA</span><span class="p">];</span>
+    <span class="c1">// Do any additional setup after loading the view, typically from a nib.</span>
+    <span class="p">[</span><span class="n">self</span> <span class="nf">cutScreenA</span><span class="p">];</span>
     <span class="p">[</span><span class="n">self</span> <span class="nf">cutScreenB</span><span class="p">];</span>
 <span class="p">}</span>
 <span class="o">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">cutScreenB</span><span class="p">{</span>
-    <span class="n">UIPanGestureRecognizer</span> <span class="o">*</span><span class="n">pan</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UIPanGestureRecognizer</span> <span class="nf">alloc</span><span class="p">]</span><span class="nf">initWithTarget</span><span class="p">:</span><span class="n">self</span> <span class="nf">action</span><span class="p">:</span><span class="k">@selector</span><span class="p">(</span><span class="nf">cupScreen</span><span class="p">:)];</span>
+    <span class="n">UIPanGestureRecognizer</span> <span class="o">*</span><span class="n">pan</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UIPanGestureRecognizer</span> <span class="nf">alloc</span><span class="p">]</span><span class="nf">initWithTarget</span><span class="p">:</span><span class="n">self</span> <span class="nf">action</span><span class="p">:</span><span class="k">@selector</span><span class="p">(</span><span class="n">cupScreen</span><span class="o">:</span><span class="p">)];</span>
      <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">cutScreenViewB</span> <span class="nf">addGestureRecognizer</span><span class="p">:</span><span class="n">pan</span><span class="p">];</span>
 <span class="p">}</span>
 <span class="o">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">cutScreenA</span><span class="p">{</span>
-    <span class="n">UIPanGestureRecognizer</span> <span class="o">*</span><span class="n">pan</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UIPanGestureRecognizer</span> <span class="nf">alloc</span><span class="p">]</span><span class="nf">initWithTarget</span><span class="p">:</span><span class="n">self</span> <span class="nf">action</span><span class="p">:</span><span class="k">@selector</span><span class="p">(</span><span class="nf">cupScreen</span><span class="p">:)];</span>
+    <span class="n">UIPanGestureRecognizer</span> <span class="o">*</span><span class="n">pan</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UIPanGestureRecognizer</span> <span class="nf">alloc</span><span class="p">]</span><span class="nf">initWithTarget</span><span class="p">:</span><span class="n">self</span> <span class="nf">action</span><span class="p">:</span><span class="k">@selector</span><span class="p">(</span><span class="n">cupScreen</span><span class="o">:</span><span class="p">)];</span>
     <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">cutScreenView</span> <span class="nf">addGestureRecognizer</span><span class="p">:</span><span class="n">pan</span><span class="p">];</span>
    
 <span class="p">}</span>

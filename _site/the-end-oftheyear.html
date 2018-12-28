@@ -9,12 +9,13 @@
   <link rel="Shortcut icon" href="https://raw.githubusercontent.com/SionFu/SionFu.github.io/master/_site/Images/favicon.ico" />
   <link rel="Bookmark" href="https://raw.githubusercontent.com/SionFu/SionFu.github.io/master/_site/Images/favicon.ico" />
 
-  <title>简单的分屏 Demo</title>
-  <meta name="description" content="  利用 autoLayout 和 Size Classes 先进行布局  上面或者左边的 view 先进行 with 和 height 的限定  把约束进行拖线 利用 pan point.x/y 的手势进行约束constant的赋值  代码">
+  <title>8102年终总结</title>
+  <meta name="description" content="今年幸运">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://fdson.com/%E7%AE%80%E5%8D%95%E5%88%86%E5%B1%8F-demo.html">
-  <link rel="alternate" type="application/rss+xml" title="Fu_sion" href="http://fdson.com/feed.xml">
+
+  <link rel="canonical" href="http://localhost:4000/the-end-oftheyear.html">
+  <link rel="alternate" type="application/rss+xml" title="Fu_sion" href="http://localhost:4000/feed.xml">
 </head>
 
 
@@ -24,7 +25,7 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="/">Fu_sion</a>
+    <a class="site-title" href="/"><img src="https://raw.githubusercontent.com/SionFu/SionFu.github.io/master/_site/images/me.png" style="border-radius: 50%;width: 36px;margin-right: 5px;">Fu_sion</a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -40,10 +41,12 @@
           
         
           
+          <link rel="stylesheet" href="/css/pygments.css">
           <a class="page-link" href="/contact/">Contact</a>
           
         
           
+          <link rel="stylesheet" href="/css/pygments.css">
           <a class="page-link" href="/about/">About</a>
           
         
@@ -66,69 +69,74 @@
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">简单的分屏 Demo</h1>
-    <p class="post-meta"><time datetime="2016-05-07T23:58:29+08:00" itemprop="datePublished">May 7, 2016</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Fu_sion</span></span></p>
+    <h1 class="post-title" itemprop="name headline">8102年终总结</h1>
+    <p class="post-meta"><time datetime="2018-12-28T14:00:00+08:00" itemprop="datePublished">Dec 28, 2018</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Fu_sion</span></span></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <ol>
-  <li>利用 autoLayout 和 Size Classes 先进行布局</li>
-  <li>上面或者左边的 view 先进行 with 和 height 的限定</li>
-  <li>把约束进行拖线 利用 pan point.x/y 的手势进行约束constant的赋值</li>
-  <li>代码</li>
-</ol>
+    <h2 id="今年幸运">今年幸运</h2>
 
-<pre><code class="language-obj-c">//
-//  ViewController.m
-//  test_分屏
-//
-//  Created by Fu_sion on 16/4/16.
-//  Copyright © 2016年 Fu_sion. All rights reserved.
-//
+<p>身体平安</p>
 
-#import "ViewController.h"
+<p>父母安康</p>
 
-@interface ViewController ()
-@property (weak, nonatomic) IBOutlet UITextView *textViewA;
-@property (weak, nonatomic) IBOutlet UITextView *textViewB;
-@property (weak, nonatomic) IBOutlet UIView *cutScreenView;
-@property (weak, nonatomic) IBOutlet UIView *cutScreenViewB;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *viewAAndBHeigth;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *viewAHeigh;
+<h2 id="工作依旧">工作依旧</h2>
 
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *viewAwith;
-@end
+<p>人无远虑</p>
 
-@implementation ViewController
+<p>必有近忧</p>
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    [self cutScreenA];
-    [self cutScreenB];
-}
--(void)cutScreenB{
-    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(cupScreen:)];
-     [self.cutScreenViewB addGestureRecognizer:pan];
-}
-- (void)cutScreenA{
-    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(cupScreen:)];
-    [self.cutScreenView addGestureRecognizer:pan];
-   
-}
--(void)cupScreen:(UIPanGestureRecognizer*)sender{
-    CGPoint point = [sender locationInView:self.view];
-    CGFloat screenHeigth = self.view.frame.size.height;
-    CGFloat mu = self.viewAAndBHeigth.multiplier;
-    CGFloat mutiplier = (screenHeigth - point.y) / point.y;
-    NSLog(@"%f ,%f ",mutiplier,mu);
+<p>童心</p>
 
-    self.viewAHeigh.constant = point.y;
-    self.viewAwith.constant = point.x;
-    
-}
-</code></pre>
-<p>##注意:约束的定位 和两个 cutView 的pan 手势需要分开添加两个手势才会生效;</p>
+<p>奋斗</p>
+
+<p>工作</p>
+
+<p>生活</p>
+
+<h2 id="爱自己想要的">爱自己想要的</h2>
+
+<p>做自己想做的</p>
+
+<p>不要舍不得</p>
+
+<p>不要太留恋</p>
+
+<p>该过去的</p>
+
+<p>总会过去</p>
+
+<p>留下的要珍惜</p>
+
+<p>失去的该忘记</p>
+
+<p>不留恋过去</p>
+
+<p>不空想未来</p>
+
+<p>放轻松</p>
+
+<p>看过这个世界</p>
+
+<p>也就这样了</p>
+
+<p>心态要好</p>
+
+<h2 id="该过去的总会过去">该过去的总会过去</h2>
+
+<p>放弃是艰难的</p>
+
+<p>正是因为这样才会变得艰难</p>
+
+<p>容易的事情往往不会变的这么艰难。</p>
+
+<p>我想挑战下艰难的事情，不要这样对自己</p>
+
+<p>谎言、虚伪、自负、成败、未来</p>
+
+<p><strong>工作重要</strong></p>
+
+<p><strong>家庭第一</strong></p>
 
 
   </div>
@@ -173,7 +181,7 @@
       </div>
 
       <div class="footer-col footer-col-3">
-        <p>一个正在积极学习 OC 、Swift中的码农！</br> 很高兴能在这里和你一起交流！
+        <p>一个正在积极学习 OC和Swift中的码农！</br> 很高兴能在这里和你一起交流！
 </p>
       </div>
     </div>

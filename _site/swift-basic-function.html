@@ -14,8 +14,8 @@
 
   <link rel="stylesheet" href="/css/main.css">
 
-  <link rel="canonical" href="https://fdson.com/swift-basic-function.html">
-  <link rel="alternate" type="application/rss+xml" title="Fu_sion" href="https://fdson.com/feed.xml">
+  <link rel="canonical" href="http://localhost:4000/swift-basic-function.html">
+  <link rel="alternate" type="application/rss+xml" title="Fu_sion" href="http://localhost:4000/feed.xml">
 </head>
 
 
@@ -74,11 +74,11 @@
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <h2 id="section">定义一个函数</h2>
+    <h2 id="定义一个函数">定义一个函数</h2>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="o">/**</span><span class="kd">func</span> <span class="nf">函数名</span><span class="p">(</span><span class="nv">参数名</span> <span class="p">:</span> <span class="n">参数类型</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">返回类型</span>  <span class="p">{</span>
-<span class="n">函数部分</span>
-<span class="p">}</span> <span class="o">*/</span>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/**func 函数名(参数名 : 参数类型) -&gt; 返回类型  {
+函数部分
+} */</span>
 
 <span class="kd">func</span> <span class="nf">sayHello</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">Void</span><span class="p">)</span> <span class="p">{</span>
     <span class="nf">print</span><span class="p">(</span><span class="s">"hello"</span><span class="p">)</span>
@@ -132,14 +132,13 @@
 <span class="n">result</span><span class="o">.</span><span class="mi">1</span>
 <span class="n">result</span><span class="o">.</span><span class="mi">2</span>
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <ul>
   <li>函数参数</li>
 </ul>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">//函数的参数</span>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//函数的参数</span>
 <span class="kd">func</span> <span class="nf">fa</span><span class="p">(</span><span class="nv">localeName</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="p">{</span>
     <span class="c1">//localeName 是参数名</span>
     <span class="c1">//并且是内部名 就只是能在函数内部使用</span>
@@ -181,22 +180,21 @@
 
 <span class="nf">pointWithXX</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span> <span class="nv">andY</span><span class="p">:</span> <span class="mi">9</span><span class="p">)</span>
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <ul>
   <li>函数的重载</li>
 </ul>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>
-<span class="o">/**</span>
-    <span class="nf">函数重载</span><span class="p">(</span><span class="n">方法重载</span><span class="p">)</span>
-    <span class="n">两个或者以上的方法</span> <span class="n">方法名相同</span> <span class="n">参数列表不一样都可以形成重载关系</span>
-    <span class="nv">参数列表不同</span><span class="p">:</span> <span class="n">参数的个数不同</span>
-                <span class="n">参数的类型不同</span>
-                <span class="n">参数的顺序不同</span>
-                <span class="n">swift</span> <span class="n">中的外部名不同</span>
-<span class="o">*/</span>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="cm">/**
+    函数重载(方法重载)
+    两个或者以上的方法 方法名相同 参数列表不一样都可以形成重载关系
+    参数列表不同: 参数的个数不同
+                参数的类型不同
+                参数的顺序不同
+                swift 中的外部名不同
+*/</span>
 <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span><span class="kt">Int</span> <span class="p">{</span>
     <span class="nf">print</span><span class="p">(</span><span class="s">"add(x: Int, y:Int) -&gt;Int"</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">y</span>
@@ -214,18 +212,17 @@
 <span class="nf">add</span><span class="p">(</span><span class="mf">99.0</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="mf">98.0</span><span class="p">)</span>
 <span class="nf">add</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">)</span>
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <ul>
   <li>函数的默认值和边长参数</li>
 </ul>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="o">/**</span>
-    <span class="n">一个函数的参数</span> <span class="n">可以设定默认值</span> 
-    <span class="n">如果这个参数不穿入值</span> <span class="n">则使用默认值</span> 
-    <span class="n">如果传入值</span> <span class="n">则会自动替代掉这个值</span>
-<span class="o">*/</span>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/**
+    一个函数的参数 可以设定默认值 
+    如果这个参数不穿入值 则使用默认值 
+    如果传入值 则会自动替代掉这个值
+*/</span>
 <span class="kd">func</span> <span class="nf">printArray</span><span class="p">(</span><span class="nv">array</span><span class="p">:</span> <span class="p">[</span><span class="kt">Int</span><span class="p">],</span> <span class="nv">apli</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">","</span><span class="p">,</span> <span class="nv">flag</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">if</span> <span class="n">flag</span> <span class="p">{</span>
         <span class="nf">print</span><span class="p">(</span><span class="s">"["</span><span class="p">)</span>
@@ -255,14 +252,13 @@
 <span class="c1">//可以传入n个值</span>
 <span class="nf">getAvg</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <ul>
   <li>函数的类型</li>
 </ul>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="c1">//函数类型</span>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//函数类型</span>
 <span class="c1">//() -&gt; void</span>
 <span class="c1">//函数类型 也可以写成 () -&gt; ()</span>
 <span class="kd">func</span> <span class="nf">sayHello</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="p">{</span>
@@ -329,8 +325,7 @@
 <span class="p">}</span>
 
 <span class="nf">test1</span><span class="p">()(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>							<span class="c1">//1</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 
   </div>
