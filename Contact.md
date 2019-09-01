@@ -5,13 +5,13 @@ permalink: /contact/
 ---
 下面是我的联系方式，有任何问题，欢迎与我交流
 
-1. WeiBo：[@Fu_sion](http://weibo.com/fudongsheng)
-2. E-mail：Fu_sion#live.com
-3. QQ：376741420
-4. 或者
+- WeiBo：[@Fu_sion](http://weibo.com/fudongsheng) 
+- E-mail：Fu_sion#live.com
+- Telegram ：@Fu_sion
+- 或者微信
 
 
-![weiChat](https://raw.githubusercontent.com/SionFu/SionFu.github.io/master/_site/images/WeChat.png)
+![weiChat](/images/WeChat.png)
 
 现居地：浙江 衢州
 
