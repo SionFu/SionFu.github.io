@@ -70,7 +70,7 @@
 
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">iOS 企业版发布流程</h1>
-    <p class="post-meta"><time datetime="2017-12-26T16:25:13+08:00" itemprop="datePublished">Dec 26, 2017</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Fu_sion</span></span></p>
+    <p class="post-meta"><time datetime="2017-12-26T03:25:13-05:00" itemprop="datePublished">Dec 26, 2017</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Fu_sion</span></span></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
@@ -84,80 +84,80 @@
 
 <p>将这三个文件放在根目录的 APPS 文件夹下</p>
 
-<p><em>需要注意的是 <code class="highlighter-rouge">.ipa</code> 文件名必须和 <code class="highlighter-rouge">.plist</code> 文件名一致,</em>
-<em><code class="highlighter-rouge">bundle-identifier</code> 必须和打包的包名内一致</em></p>
+<p><em>需要注意的是 <code class="language-plaintext highlighter-rouge">.ipa</code> 文件名必须和 <code class="language-plaintext highlighter-rouge">.plist</code> 文件名一致,</em>
+<em><code class="language-plaintext highlighter-rouge">bundle-identifier</code> 必须和打包的包名内一致</em></p>
 
 <p>test.plist</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
-<span class="cp">&lt;!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"&gt;</span>
-<span class="nt">&lt;plist</span> <span class="na">version=</span><span class="s">"1.0"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;dict&gt;</span>
-	<span class="nt">&lt;key&gt;</span>items<span class="nt">&lt;/key&gt;</span>
-	<span class="nt">&lt;array&gt;</span>
-		<span class="nt">&lt;dict&gt;</span>
-			<span class="nt">&lt;key&gt;</span>assets<span class="nt">&lt;/key&gt;</span>
-			<span class="nt">&lt;array&gt;</span>
-				<span class="nt">&lt;dict&gt;</span>
-					<span class="nt">&lt;key&gt;</span>kind<span class="nt">&lt;/key&gt;</span>
-					<span class="nt">&lt;string&gt;</span>software-package<span class="nt">&lt;/string&gt;</span>
-					<span class="nt">&lt;key&gt;</span>url<span class="nt">&lt;/key&gt;</span>
-					<span class="nt">&lt;string&gt;</span>https:/www.fdson.com/apps/xxx.ipa<span class="nt">&lt;/string&gt;</span>
-				<span class="nt">&lt;/dict&gt;</span>
-				<span class="nt">&lt;dict&gt;</span>
-					<span class="nt">&lt;key&gt;</span>kind<span class="nt">&lt;/key&gt;</span>
-					<span class="nt">&lt;string&gt;</span>full-size-image<span class="nt">&lt;/string&gt;</span>
-					<span class="nt">&lt;key&gt;</span>needs-shine<span class="nt">&lt;/key&gt;</span>
-					<span class="nt">&lt;false/&gt;</span>
-					<span class="nt">&lt;key&gt;</span>url<span class="nt">&lt;/key&gt;</span>
-					<span class="nt">&lt;string&gt;</span>vhttps://www.fdson.com/apps/image.512x512.png<span class="nt">&lt;/string&gt;</span>
-				<span class="nt">&lt;/dict&gt;</span>
-				<span class="nt">&lt;dict&gt;</span>
-					<span class="nt">&lt;key&gt;</span>kind<span class="nt">&lt;/key&gt;</span>
-					<span class="nt">&lt;string&gt;</span>display-image<span class="nt">&lt;/string&gt;</span>
-					<span class="nt">&lt;key&gt;</span>needs-shine<span class="nt">&lt;/key&gt;</span>
-					<span class="nt">&lt;false/&gt;</span>
-					<span class="nt">&lt;key&gt;</span>url<span class="nt">&lt;/key&gt;</span>
-					<span class="nt">&lt;string&gt;</span>https://www.fdson.com/apps/image.57x57.png<span class="nt">&lt;/string&gt;</span>
-				<span class="nt">&lt;/dict&gt;</span>
-			<span class="nt">&lt;/array&gt;</span>
-			<span class="nt">&lt;key&gt;</span>metadata<span class="nt">&lt;/key&gt;</span>
-			<span class="nt">&lt;dict&gt;</span>
-				<span class="nt">&lt;key&gt;</span>bundle-identifier<span class="nt">&lt;/key&gt;</span>
-				<span class="nt">&lt;string&gt;</span>com.fdson.test<span class="nt">&lt;/string&gt;</span> /
-				<span class="nt">&lt;key&gt;</span>bundle-version<span class="nt">&lt;/key&gt;</span>
-				<span class="nt">&lt;string&gt;</span>1.40<span class="nt">&lt;/string&gt;</span>
-				<span class="nt">&lt;key&gt;</span>kind<span class="nt">&lt;/key&gt;</span>
-				<span class="nt">&lt;string&gt;</span>software<span class="nt">&lt;/string&gt;</span>
-				<span class="nt">&lt;key&gt;</span>subtitle<span class="nt">&lt;/key&gt;</span>
-				<span class="nt">&lt;string&gt;</span>副标题（非必填）<span class="nt">&lt;/string&gt;</span>
-				<span class="nt">&lt;key&gt;</span>title<span class="nt">&lt;/key&gt;</span>
-				<span class="nt">&lt;string&gt;</span>巨化云办公<span class="nt">&lt;/string&gt;</span>
-			<span class="nt">&lt;/dict&gt;</span>
-		<span class="nt">&lt;/dict&gt;</span>
-	<span class="nt">&lt;/array&gt;</span>
-<span class="nt">&lt;/dict&gt;</span>
-<span class="nt">&lt;/plist&gt;</span>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"&gt;
+&lt;plist version="1.0"&gt;
+&lt;dict&gt;
+	&lt;key&gt;items&lt;/key&gt;
+	&lt;array&gt;
+		&lt;dict&gt;
+			&lt;key&gt;assets&lt;/key&gt;
+			&lt;array&gt;
+				&lt;dict&gt;
+					&lt;key&gt;kind&lt;/key&gt;
+					&lt;string&gt;software-package&lt;/string&gt;
+					&lt;key&gt;url&lt;/key&gt;
+					&lt;string&gt;https:/www.fdson.com/apps/xxx.ipa&lt;/string&gt;
+				&lt;/dict&gt;
+				&lt;dict&gt;
+					&lt;key&gt;kind&lt;/key&gt;
+					&lt;string&gt;full-size-image&lt;/string&gt;
+					&lt;key&gt;needs-shine&lt;/key&gt;
+					&lt;false/&gt;
+					&lt;key&gt;url&lt;/key&gt;
+					&lt;string&gt;vhttps://www.fdson.com/apps/image.512x512.png&lt;/string&gt;
+				&lt;/dict&gt;
+				&lt;dict&gt;
+					&lt;key&gt;kind&lt;/key&gt;
+					&lt;string&gt;display-image&lt;/string&gt;
+					&lt;key&gt;needs-shine&lt;/key&gt;
+					&lt;false/&gt;
+					&lt;key&gt;url&lt;/key&gt;
+					&lt;string&gt;https://www.fdson.com/apps/image.57x57.png&lt;/string&gt;
+				&lt;/dict&gt;
+			&lt;/array&gt;
+			&lt;key&gt;metadata&lt;/key&gt;
+			&lt;dict&gt;
+				&lt;key&gt;bundle-identifier&lt;/key&gt;
+				&lt;string&gt;com.fdson.test&lt;/string&gt; /
+				&lt;key&gt;bundle-version&lt;/key&gt;
+				&lt;string&gt;1.40&lt;/string&gt;
+				&lt;key&gt;kind&lt;/key&gt;
+				&lt;string&gt;software&lt;/string&gt;
+				&lt;key&gt;subtitle&lt;/key&gt;
+				&lt;string&gt;副标题（非必填）&lt;/string&gt;
+				&lt;key&gt;title&lt;/key&gt;
+				&lt;string&gt;巨化云办公&lt;/string&gt;
+			&lt;/dict&gt;
+		&lt;/dict&gt;
+	&lt;/array&gt;
+&lt;/dict&gt;
+&lt;/plist&gt;
 
 </code></pre></div></div>
 
 <p>app.html
 <em>这里的 plist文件 必须放置在 https 的地址下</em></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html&gt;</span>
-<span class="nt">&lt;head&gt;</span>
-	<span class="nt">&lt;title&gt;</span>install App<span class="nt">&lt;/title&gt;</span>
-<span class="nt">&lt;/head&gt;</span>
-<span class="nt">&lt;body&gt;</span>
-	<span class="nt">&lt;h2&gt;&lt;center&gt;&lt;a</span> <span class="na">href=</span><span class="s">"itms-services://?action=download-manifest&amp;url=https://www.fdson.com/apps/test.plist"</span> <span class="na">id=</span><span class="s">"text"</span><span class="nt">&gt;</span>install fdson App<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;/center&gt;&lt;/h2&gt;</span>
-<span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;install App&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;h2&gt;&lt;center&gt;&lt;a href="itms-services://?action=download-manifest&amp;url=https://www.fdson.com/apps/test.plist" id="text"&gt;install fdson App&lt;/a&gt; &lt;/center&gt;&lt;/h2&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </code></pre></div></div>
 
 <p>这样访问以下地址就可以下载企业版本的 APP 了，需要在设置 -&gt; 通用 -&gt; 证书 -信任此证书</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://fdson.com/apps/test.html
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://fdson.com/apps/test.html
 </code></pre></div></div>
 
 <!---->

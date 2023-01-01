@@ -70,13 +70,13 @@
 
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">在 github 上安装个人博客</h1>
-    <p class="post-meta"><time datetime="2016-05-23T01:00:22+08:00" itemprop="datePublished">May 23, 2016</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Fu_sion</span></span></p>
+    <p class="post-meta"><time datetime="2016-05-22T13:00:22-04:00" itemprop="datePublished">May 22, 2016</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Fu_sion</span></span></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
     <h3 id="用到的命令">用到的命令</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ gem install jekyll
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ gem install jekyll
  $ jekyll new my-awesome-site
  $ jekyll build    //写完文章之后需要 build 下
  $ jekyll serve		//启动服务
@@ -90,7 +90,7 @@
   <li>在电脑上安装环境 <a href="http://jekyll.bootcss.com">Jekyll</a> 这里是一个中文版的安装教程在 Mac 下一下几行命令就能完成安装</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ gem install jekyll
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ gem install jekyll
 ~ $ jekyll new my-awesome-site
 ~ $ cd my-awesome-site
 ~/my-awesome-site $ jekyll serve
@@ -104,7 +104,7 @@
 
 <p><img src="https://raw.githubusercontent.com/SionFu/SionFu.github.io/master/_site/images/GithubBlog.png" alt="GithubBlog" /></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>这里在棕色框内必须填写**用户名**.Github.io 才能创建博客项目,且一个账号就只能创建一个这样的项目。 - 如果这里项目名写错了, 也可以在后面再修改
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>这里在棕色框内必须填写**用户名**.Github.io 才能创建博客项目,且一个账号就只能创建一个这样的项目。 - 如果这里项目名写错了, 也可以在后面再修改
 </code></pre></div></div>
 
 <p><img src="https://raw.githubusercontent.com/SionFu/SionFu.github.io/master/_site/images/changename.png" alt="changename" /></p>
@@ -116,13 +116,13 @@
 <p><img src="https://raw.githubusercontent.com/SionFu/SionFu.github.io/master/_site/images/LunchPage.png" alt="LunchPage" /></p>
 
 <ul>
-  <li>点击这个按钮之后你就可以从<code class="highlighter-rouge">你的用户名. github.io </code>访问你的博客了, 到这里为止和 jekyll 都没什么关系</li>
+  <li>点击这个按钮之后你就可以从<code class="language-plaintext highlighter-rouge">你的用户名. github.io </code>访问你的博客了, 到这里为止和 jekyll 都没什么关系</li>
   <li>接下来还是和 jekyll 没什么关系, 打开<a href="https://desktop.github.com">GitHub Desktop</a> 下载这个很好用的 git 版本控制软件, 登陆你的github 账号就能看到刚刚创建的项目</li>
   <li>将这个项目Clone 到本地 然后 Jekyll 就派上用场了</li>
-  <li>用终端进入到刚刚 clone 下来的项目的文件夹上次层,用命令<code class="highlighter-rouge">jekyll new 你的项目名</code> 例如我的<code class="highlighter-rouge">jekyll new SionFu.giuhub.io</code> 这样就创建好了你的个人静态博客, 接下来是配置打开项目里的<code class="highlighter-rouge">_config.yml</code>文件</li>
+  <li>用终端进入到刚刚 clone 下来的项目的文件夹上次层,用命令<code class="language-plaintext highlighter-rouge">jekyll new 你的项目名</code> 例如我的<code class="language-plaintext highlighter-rouge">jekyll new SionFu.giuhub.io</code> 这样就创建好了你的个人静态博客, 接下来是配置打开项目里的<code class="language-plaintext highlighter-rouge">_config.yml</code>文件</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Welcome to Jekyll!
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely need to edit after that.
@@ -147,11 +147,11 @@ markdown: kramdown
 </code></pre></div></div>
 
 <ul>
-  <li>ok 一切就绪,这里需<strong>要注意</strong>的一个地方是, 在配置文件的前和配置名之前需要有个空格!比如<code class="highlighter-rouge">title:[一个空格]Fu_sion</code>不然就 bulid 不成功</li>
-  <li>接下来在终端运行 <code class="highlighter-rouge">$ jekyll build</code></li>
+  <li>ok 一切就绪,这里需<strong>要注意</strong>的一个地方是, 在配置文件的前和配置名之前需要有个空格!比如<code class="language-plaintext highlighter-rouge">title:[一个空格]Fu_sion</code>不然就 bulid 不成功</li>
+  <li>接下来在终端运行 <code class="language-plaintext highlighter-rouge">$ jekyll build</code></li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Configuration file: /Users/Fusion/test/_config.yml
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Configuration file: /Users/Fusion/test/_config.yml
             Source: /Users/Fusion/test
        Destination: /Users/Fusion/test/_site
  Incremental build: disabled. Enable with --incremental
@@ -162,10 +162,10 @@ markdown: kramdown
 <p>看到这样的提示基本成功了 只差最后一步</p>
 
 <ul>
-  <li>然后是 <code class="highlighter-rouge">$ jekyll server</code></li>
+  <li>然后是 <code class="language-plaintext highlighter-rouge">$ jekyll server</code></li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      Generating... 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      Generating... 
                     done in 0.25 seconds.
  Auto-regeneration: enabled for '/Users/Fusion/test'
 Configuration file: /Users/Fusion/test/_config.yml
@@ -184,11 +184,11 @@ Configuration file: /Users/Fusion/test/_config.yml
 
 <ul>
   <li>
-    <p>点击右上角的Sync Done! 可以访问你的域名了如<code class="highlighter-rouge">SionFu.github.io</code>了!
+    <p>点击右上角的Sync Done! 可以访问你的域名了如<code class="language-plaintext highlighter-rouge">SionFu.github.io</code>了!
 <img src="https://raw.githubusercontent.com/SionFu/SionFu.github.io/master/_site/images/Sync.png" alt="Syn" /></p>
   </li>
   <li>
-    <p>接下来就是关联自己的域名(如果你有的话), 在这个工程下面新建一个文件名为<code class="highlighter-rouge">CNAME</code> 没有后缀</p>
+    <p>接下来就是关联自己的域名(如果你有的话), 在这个工程下面新建一个文件名为<code class="language-plaintext highlighter-rouge">CNAME</code> 没有后缀</p>
   </li>
 </ul>
 
@@ -196,7 +196,7 @@ Configuration file: /Users/Fusion/test/_config.yml
 
 <p>里面填写内容为你的域名 ok 真的结束了，然后在你的域名 DNS 服务器中添加 cname 指向你的博客域名 <img src="https://raw.githubusercontent.com/SionFu/SionFu.github.io/master/_site/images/dns%20edit.png" alt="dns edit" /></p>
 
-<p>例如<code class="highlighter-rouge">fdson.com cname -&gt; SionFu.github.io</code> 接下来就可以用你的域名访问你的博客了</p>
+<p>例如<code class="language-plaintext highlighter-rouge">fdson.com cname -&gt; SionFu.github.io</code> 接下来就可以用你的域名访问你的博客了</p>
 
 <ul>
   <li>最后向你推介 DNS 域名解析商 完全是免费的 <a href="https://www.dnspod.cn">DNSPOD</a></li>
