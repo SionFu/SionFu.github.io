@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>无人机驾驶员培训测试系统</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin-top: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+        .question-container {
+            margin-bottom: 20px;
+        }
+        .option-label {
+            display: block;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .option-label:hover {
+            background-color: #f1f1f1;
+        }
+        .option-label.selected {
+            background-color: #e3f2fd;
+            border-color: #90caf9;
+        }
+        .option-label.correct {
+            background-color: #d4edda;
+            border-color: #c3e6cb;
+        }
+        .option-label.incorrect {
+            background-color: #f8d7da;
+            border-color: #f5c6cb;
+        }
+        .progress-container {
+            margin-bottom: 20px;
+        }
+        .question-type {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+        .single {
+            background-color: #e3f2fd;
+            color: #0d47a1;
+        }
+        .multi {
+            background-color: #fff3e0;
+            color: #e65100;
+        }
+        .true_false {
+            background-color: #e8f5e9;
+            color: #1b5e20;
+        }
+        .explanation {
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #6c757d;
+            display: none;
+        }
+        .btn-next {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 欢迎页面 -->
+        <div id="welcome-screen" class="text-center">
+            <h1 class="mb-4">无人机驾驶员培训测试系统</h1>
+            <p class="lead mb-4">本测试包含100道题目，其中单选题70道，多选题10道，判断题20道。</p>
+            <button id="start-test" class="btn btn-primary btn-lg">开始测试</button>
+        </div>
+
+        <!-- 测试页面 -->
+        <div id="test-screen" style="display: none;">
+            <div class="progress-container">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div>
+                        <span id="current-question">1</span> / <span id="total-questions">100</span>
+                    </div>
+                    <div id="timer">00:00:00</div>
+                </div>
+                <div class="progress">
+                    <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <span id="question-type" class="question-type single">单选题</span>
+                    <span id="question-id"></span>
+                </div>
+                <h5 id="question-text">题目加载中...</h5>
+                <div id="options-container">
+                    <!-- 选项将通过JavaScript动态添加 -->
+                </div>
+                <div id="explanation" class="explanation"></div>
+                <button id="btn-next" class="btn btn-primary mt-3 btn-next">下一题</button>
+            </div>
+        </div>
+
+        <!-- 结果页面 -->
+        <div id="result-screen" class="text-center" style="display: none;">
+            <h2 class="mb-4">测试完成</h2>
+            <div class="alert alert-info">
+                <h3>您的得分: <span id="score">0</span> / 100</h3>
+                <p>用时: <span id="time-used">00:00:00</span></p>
+            </div>
+            <div class="text-start mb-4">
+                <p>单选题: <span id="single-correct">0</span> / <span id="single-total">70</span></p>
+                <p>多选题: <span id="multi-correct">0</span> / <span id="multi-total">10</span></p>
+                <p>判断题: <span id="tf-correct">0</span> / <span id="tf-total">20</span></p>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button id="review-wrong" class="btn btn-warning me-3">测试错题</button>
+                <button id="restart-test" class="btn btn-primary">重新开始测试</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
