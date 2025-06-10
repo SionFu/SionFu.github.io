@@ -84,7 +84,7 @@ function selectRandomQuestions() {
     }
 
     // 随机选择70道单选题
-    const selectedSingleChoice = getRandomItems(allQuestions.single_choice, 70);
+    const selectedSingleChoice = getRandomItems(allQuestions.single_choice, 80);
     selectedSingleChoice.forEach(q => {
         questions.push(q);
         usedQuestionIds.add(q.id);
@@ -108,7 +108,7 @@ function selectRandomQuestions() {
     });
 
     // 随机打乱题目顺序
-    return shuffleArray(questions);
+    return questions;
 }
 
 // 从数组中随机选择指定数量的元素
