@@ -348,7 +348,7 @@ function restartTest() {
 
 // 更新进度条
 function updateProgress() {
-    const progress = ((currentQuestionIndex + 1) / currentQuestions.length) * 100;
+    const progress = ((currentQuestionIndex + 1) / currentQuestions.length) * 110;
     document.getElementById('progress-bar').style.width = `${progress}%`;
     document.getElementById('progress-bar').setAttribute('aria-valuenow', progress);
     document.getElementById('current-question').textContent = currentQuestionIndex + 1;
