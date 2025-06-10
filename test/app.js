@@ -22,7 +22,7 @@ let stats = {
 // 初始化
 document.addEventListener('DOMContentLoaded', function() {
     // 加载题库
-    fetch('questions.json')
+    fetch('questions2.json')
         .then(response => response.json())
         .then(data => {
             allQuestions = data;
