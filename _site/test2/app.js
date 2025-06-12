@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('restart-test').addEventListener('click', restartTest);
 });
 function startTestAll() {
-    window.location.href = "/test2";
+    window.history.back();
 }
 // 开始测试
 function startTest() {
@@ -87,7 +87,7 @@ function selectRandomQuestions() {
     }
 
     // 随机选择70道单选题
-    const selectedSingleChoice = getRandomItems(allQuestions.single_choice, 80);
+    const selectedSingleChoice = allQuestions.single_choice;
     selectedSingleChoice.forEach(q => {
         questions.push(q);
         usedQuestionIds.add(q.id);
@@ -95,7 +95,7 @@ function selectRandomQuestions() {
     });
 
     // 随机选择10道多选题
-    const selectedMultiChoice = getRandomItems(allQuestions.multi_choice, 10);
+    const selectedMultiChoice = allQuestions.multi_choice;
     selectedMultiChoice.forEach(q => {
         questions.push(q);
         usedQuestionIds.add(q.id);
@@ -103,7 +103,7 @@ function selectRandomQuestions() {
     });
 
     // 随机选择20道判断题
-    const selectedTrueFalse = getRandomItems(allQuestions.true_false, 20);
+    const selectedTrueFalse = allQuestions.true_false;
     selectedTrueFalse.forEach(q => {
         questions.push(q);
         usedQuestionIds.add(q.id);
@@ -351,7 +351,7 @@ function restartTest() {
 
 // 更新进度条
 function updateProgress() {
-    const progress = ((currentQuestionIndex + 1) / currentQuestions.length) * 110;
+    const progress = ((currentQuestionIndex + 1) / currentQuestions.length) * 100;
     document.getElementById('progress-bar').style.width = `${progress}%`;
     document.getElementById('progress-bar').setAttribute('aria-valuenow', progress);
     document.getElementById('current-question').textContent = currentQuestionIndex + 1;
